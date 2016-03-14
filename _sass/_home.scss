@@ -1,0 +1,20 @@
+.home-photo {
+    @include media-query($on-palm) {
+        width: auto;    
+    }
+    width: 20%;
+}
+
+
+.home-profile {
+    @include media-query($on-palm) {
+        width: auto;    
+    }
+    width: 80%;
+    float: right;
+        
+    h1, p {
+        padding-left: 10px;
+    }
+
+}
