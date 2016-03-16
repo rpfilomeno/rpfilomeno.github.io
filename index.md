@@ -21,7 +21,7 @@ title: Home
 
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Language Proficiency</h3>
+    <h3 class="panel-title">Language proficiency</h3>
   </div>
   <div class="panel-body">
 	
@@ -92,7 +92,7 @@ title: Home
 
 <div class="panel panel-default">
   <div class="panel-heading">
-  	<h3 class="panel-title">Featured Projects</h3>
+  	<h3 class="panel-title">Github projects (featured)</h3>
   </div>
   <div class="panel-body">
 
@@ -120,5 +120,37 @@ title: Home
 		  </div>
 		</div>
 
+		<div class="media">
+		  <div class="media-left media-middle" style="float: left;">
+		    <a href="https://github.com/rpfilomeno/URLTester">
+		      <img class="media-object" src="images/th-url-64x64.png" alt="Tokenizer" width="64" height="64">
+		    </a>
+		  </div>
+		  <div class="media-body">
+		    <h4 class="media-heading">URLTester</h4>
+		    Test the URL's load time.
+		  </div>
+		</div>
+	</div>
 </div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+  	<h3 class="panel-title">Papers published</h3>
+  </div>
+  <div class="panel-body">
+
+  	<div class="media">
+		  <div class="media-left media-middle" style="float: left;">
+		    <a href="http://www.slideshare.net/RogerFilomeno/cellular-data-offloading-through-wifi-mesh-network-utilizing-white-space-frequencies-wp">
+		      <img class="media-object" src="images/th-slideshare-64x64.png" alt="Tokenizer" width="64" height="64">
+		    </a>
+		  </div>
+		  <div class="media-body">
+		    <h4 class="media-heading">Cellular Data-offloading Through Wifi-mesh Network Utilizing White-space Frequencies</h4>
+		    Draft whitepaper that present an idea using RFC4185 (EAP-SIM) for mobile networks to offload its data users to local WIFI networks.
+		  </div>
+		</div>
+
+  </div>
 </div>
