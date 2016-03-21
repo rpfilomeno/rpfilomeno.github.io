@@ -10,6 +10,6 @@ they can complete will give them extra point. He showed me the problem and it ba
 
 <img src="https://cloud.githubusercontent.com/assets/5754735/13801532/b7e97ecc-eb6d-11e5-8a5c-f2586228fa06.jpg">
 
-Here is the code in it's entirity:
+Here is the code in it's entirety:
 
 <script src="https://gist.github.com/rpfilomeno/3a0619a8610149bd85a5.js"></script>
