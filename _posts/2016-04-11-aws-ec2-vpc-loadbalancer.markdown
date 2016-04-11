@@ -6,9 +6,9 @@ categories: aws
 comments: true
 ---
 
-I was working on project using AWS and found out that EC2 instances with private subnets in VPC must have a "shadow" subnet with routing to the internet gateway or else external LB will not be accessible.
+I was working on project using AWS and found out that EC2 instances with private subnets in VPC must have a "shadow" subnet with routing to the Internet gateway or else external LB will not be accessible.
 
-First of all create your Internet Gateway and NAT Gateway under VPC, this is an importan concept in AWS VPC; your IG gateway provides incoming connection while your NAT gateway provides outgoing connection. 
+First of all create your Internet Gateway and NAT Gateway under VPC, this is an important concept in AWS VPC; your IG gateway provides incoming connection while your NAT gateway provides outgoing connection. 
 
 My VPC subnet for example is (10.100.0.0./16) then define your private subnets as:
 
@@ -46,7 +46,7 @@ My VPC subnet for example is (10.100.0.0./16) then define your private subnets a
 
 Create your EC2 instances _host1-a_ and _host2-b_ under subnet _subnet1-a_ and _subnet1-b_ respectively, check that the create hosts are using the IP address correctly and you can access the Internet.
 
-In your _Route Table_ you should have 2 routes, the _Main_ route should point to your NAT gateway so EC2 instances by default should have internet access via the NAT gateway, I name this _VPC-RT-NAT_:
+In your _Route Table_ you should have 2 routes, the _Main_ route should point to your NAT gateway so EC2 instances by default should have Internet access via the NAT gateway, I name this _VPC-RT-NAT_:
 
 
 <table class="table">
@@ -114,6 +114,6 @@ Next; on the _EC2 Services_; create new interfaces under _Network Interfaces_ pa
     </tr>
   </tbody>
 </table>
-Attach these newly created interfaces to their respertive EC2 instance host. Note that when you login into you hosts and use _ifconfig -a_ command, the added interfaces will not assign the private IPs under these _shadow_ subnets, only the IPs for _subnet1-a_ and _subnet2-b_ and this is normal -- thats why we call them _shadows_.
+Attach these newly created interfaces to their respective EC2 instance hosts. Note that when you login into you hosts and use _ifconfig -a_ command, the added interfaces will not assign the private IPs under these _shadow_ subnets, only the IPs for _subnet1-a_ and _subnet2-b_ and this is normal -- thats why we call them _shadows_.
 
 Finally create your load balancer and select subnets _subnet1-a-shadow_ and _subnet2-b-shadow_ and after a few minutes when the DNS updates you should be able to ping and access your LB's through its DNS name.
