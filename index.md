@@ -2,6 +2,7 @@
 layout: default
 title: Home
 ---
+
 <div class="blurb">
     <img class="home-photo" src="images/roger-circle.png">
 	<div class="home-profile">
