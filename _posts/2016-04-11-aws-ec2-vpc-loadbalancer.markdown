@@ -6,7 +6,7 @@ categories: aws
 comments: true
 ---
 
-I was working on project using AWS and found out that EC2 instances with private subnets in VPC mus have a "shadow" subnet with routing to the internet gateway or else external LB will not be accessible.
+I was working on project using AWS and found out that EC2 instances with private subnets in VPC must have a "shadow" subnet with routing to the internet gateway or else external LB will not be accessible.
 
 First of all create your Internet Gateway and NAT Gateway under VPC, this is an importan concept in AWS VPC; your IG gateway provides incoming connection while your NAT gateway provides outgoing connection. 
 
