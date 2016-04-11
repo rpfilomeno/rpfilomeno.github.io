@@ -45,8 +45,6 @@ To run the test, from SIPp Box:
 # sipp 10.254.1.30 -i 10.254.1.40 -sf uac.xml -aa -inf accounts.csv -l 10000 -r 1 -rp 1000 -trace_msg -trace_err -trace_stat
 ```
 
-
-**Parameter explanation**
 <table class="table">
   <thead>
     <tr>
