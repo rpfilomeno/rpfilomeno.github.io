@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Testing Kamailio loadbalancer with SIPp"
+title:  "Testing Kamailio load balancer with SIPp"
 date:   2016-04-11 16:05:54 +0800
 categories: voip
 comments: true
@@ -9,12 +9,12 @@ comments: true
 First of all lets describe our network setup:
 <script src="https://gist.github.com/rpfilomeno/d46493eefaf70d6838c157305ab9778a.js"></script>
 
-The a user from extension 300X registered to Asterisk 1 initiates a call to an extension 400X registered at Asterisk 2. Kamailio is registered as a trunk to both Asterisk 1 & 2; which intercepts the call which load balances it to either Asterisk X or Y where they do some fancy pre-processing to current call before its received by the callee.
+The a user from extension _300X_ registered to _Asterisk 1_ initiates a call to an extension _400X_ registered at _Asterisk 2_. _Kamailio_ is registered as a _trunk_ to both Asterisk 1 & 2; which intercepts the call which load balances it to either _Asterisk X or Y_ where they do some _fancy_ pre-processing to current call before its received by the callee.
 
 Now for our testing purposes, we needed to remove the effect on performance by Asterisk 1 & 2 so we installed SIPp on another host which generates calls and receives them.
 
-Installation Steps
--------------------
+### Installation and Execution Steps
+
 
 1. Download and Modify SIPp to auto respond always and include OPTIONS packet as well (-aa broken?), edit src/call.cpp:
 
@@ -38,7 +38,7 @@ call::T_AutoMode call::checkAutomaticResponseMode(char * P_recv)
 ```
 
 
-Compile sipp-3.3.990 with RTP Support: http://sipp.sourceforge.net/doc/reference.html#Installing+SIPp
+Compile _sipp-3.3.990_ with [RTP Support](http://sipp.sourceforge.net/doc/reference.html#Installing+SIPp).
 
 To run the test, from SIPp Box: 
 ```bash
@@ -62,12 +62,16 @@ To run the test, from SIPp Box:
       <td>make sure to bind SIPp on this IP especially if we are using IP Authentication on Kamailio</td>
     </tr>
     <tr>
-      <td>-sf uac.xml</td>
+      <td>-sf <a href="https://gist.github.com/rpfilomeno/7445a628a3cbc0ceaaf8e9afe182578b#file-uac-xml">uac.xml</a></td>
       <td>use this scenario file that generates calls.</td>
     </tr>
     <tr>
-      <td>-inf accounts.csv</td>
-      <td>use this input CSV file, this is where the [field0],[field1],[field2] and [field3] values are derived in uac.xml. Edit this file accordingly in format: CallID;Kamailio LAN A IP;[authentication];Extension on Asterisk 2 (If running SIPp server mode, this wont matter);Asterisk 2 LAN B IP;</td>
+      <td>-inf <a href="https://gist.github.com/rpfilomeno/8673ee9dc7355274dfd98d187bbde925#file-accounts-csv">accounts.csv</a></td>
+      <td>use this input CSV file, this is where the <em>[field0]</em>,<em>[field1]</em>,<em>[field2]</em> and <em>[field3]</em> values are derived in uac.xml. <br>Edit this file accordingly in format: 
+		<em>
+		CallID;Kamailio LAN A IP;[authentication];Extension on Asterisk 2;Asterisk 2 LAN B IP;
+		</em>
+	</td>
     </tr>
     <tr>
       <td>-l 10000</td>
@@ -95,10 +99,10 @@ To run the test, from SIPp Box:
 
 Make sure to edit the accounts.csv, change 10.254.1.30 and 10.254.7.31 accordingly.
 
-Make sure to edit the uac.xml, change Route: _&lt;sip:10.254.1.30;r2=on;lr=on;nat=yes&gt;,&lt;sip:10.254.3.30;r2=on;lr=on;nat=yes&gt;_ accordingly since sipp-3.3.990 can't reliably generate this header so we had to hard code this for now. 
-
-(Many thanks to Gohar Ahmed for helping me figure this out, check out his blog http://saevolgo.blogspot.com/)
-
+Make sure to edit the uac.xml, change Route:
+```
+<sip:10.254.1.30;r2=on;lr=on;nat=yes>,<sip:10.254.3.30;r2=on;lr=on;nat=yes>```
+accordingly since sipp-3.3.990 can't reliably generate this header so we had to hard code this for now. 
 
 You may run a SIPp on Asterisk 2 box to test higher concurrent calls (eg: testing more than 200 concurrent calls).
 
@@ -112,4 +116,66 @@ To run a server listening to incoming calls (server mode), run:
 # sipp 10.254.7.30 -i 10.254.7.31 -sf uas.xml -aa -trace_msg -trace_err -trace_stat
 ```
 
+Makes sure to edit the [uas.xml](https://gist.github.com/rpfilomeno/5827e6ecf5863f74f53d41b1e15fa707#file-uas-xml) to include the IP routes.
 
+Now lets see how effective is Kamailio in this setup, here are the results I had:
+<table class="table">
+  <thead>
+    <tr>
+      <th>Test Name</th>
+      <th>Concurrent Calls</th>
+      <th>Success</th>
+      <th>Failed</th>
+      <th>Dead Calls</th>
+      <th>Retransmissions</th>
+      <th>Average Response Time</th>
+      <th>Average Call Rate Per Seconds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Test1</td>
+      <td>200</td>
+      <td>1000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>2.52747</td>
+      <td>03.615000</td>
+    </tr>
+    <tr>
+      <td>Test2</td>
+      <td>300</td>
+      <td>998</td>
+      <td>2</td>
+      <td>5</td>
+      <td>252</td>
+      <td>3.15839</td>
+      <td>04.550000</td>
+    </tr>
+    <tr>
+      <td>Test3</td>
+      <td>400</td>
+      <td>993</td>
+      <td>7</td>
+      <td>12</td>
+      <td>1355</td>
+      <td>3.61512</td>
+      <td>13.049000</td>
+    </tr>
+    <tr>
+      <td>Test4</td>
+      <td>600</td>
+      <td>831</td>
+      <td>169</td>
+      <td>127</td>
+      <td>3554</td>
+      <td>4.05337</td>
+      <td>13.04900</td>
+    </tr>
+  </tbody>
+</table>
+
+We stop at _Test 4_ seeing Failed Calls spiked up at 169 calls, this was significant from our base capacity of 50 concurrent calls already.
+
+Many thanks to [Gohar Ahmed](http://saevolgo.blogspot.com/) for helping me figuring most of the bugs.
