@@ -20,8 +20,11 @@ while read -r line; do
     NAME=`echo $line | awk '{print $2}'`
     if [ ! -z "$NAME" ]; then
         BASEIP=`echo $IP | cut -d"." -f1-3`
+        sudo echo $BASEIP".0/24 dev "$NAME" tab "$TAB > /etc/sysconfig/network-scripts/route-$NAME
+        sudo echo "default via "$BASEIP".1 dev "$NAME" tab "$TAB >> /etc/sysconfig/network-scripts/route-$NAME
         
         BASEIP=`echo $IP | cut -d"/" -f1`
+        sudo echo "from "$BASEIP"/32 tab "$TAB" priority "$PRIORITY > /etc/sysconfig/network-scripts/rule-$NAME
 
         TAB=$(($TAB+1))
         PRIORITY=$(($PRIORITY+100))
@@ -29,3 +32,4 @@ while read -r line; do
 done <<< "$LIST"
 ```
 
+I use this script with [Rundeck](http://rundeck.org/) in job as an in-line script and it does the configuration of all my 15 host for me in one click.
