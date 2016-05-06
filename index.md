@@ -97,6 +97,18 @@ title: Home
   </div>
   <div class="panel-body">
 
+        <div class="media">
+		  <div class="media-left media-middle" style="float: left;">
+		    <a href="https://github.com/rpfilomeno/voip-mon-aws-cloudwatch">
+		      <img class="media-object" src="images/th-aws-64x64.png" alt="VOIP Statistics to AWS CloudWatch" width="64" height="64">
+		    </a>
+		  </div>
+		  <div class="media-body">
+		    <h4 class="media-heading">voip-mon-aws-cloudwatch</h4>
+		    A monitoring script for Kamailio and Asterisk for AWS CloudWatch written in PHP. This works similarly to AWS CloudWatch Monitoring Script (Linux).
+		  </div>
+		</div>
+
 		<div class="media">
 		  <div class="media-left media-middle" style="float: left;">
 		    <a href="https://github.com/rpfilomeno/tr069config">
