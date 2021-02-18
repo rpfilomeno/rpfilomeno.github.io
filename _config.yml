@@ -8,8 +8,7 @@
 # Site settings
 title: Gits, Gist and Musings
 email: rpfilomeno@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Know more about Roger Filomeno. My work, my thoughts, my rants.
+description: "Know more about Roger Filomeno. My work, my thoughts, my rants."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://rpfilomeno.github.io" # the base hostname & protocol for your site
 twitter_username: godie
