@@ -6,6 +6,8 @@ categories: competition
 comments: true
 ---
 
+![Stackleague](/upload/FB_IMG_1615211893936.jpg.jpg)
+
 There's a new local all year round competition for developers launching this March at https://stackleague.com
 
 The price pool is 200,000 pesos (Php) as the time of this post.
