@@ -6,7 +6,7 @@ categories: competition
 comments: true
 ---
 
-![Stackleague](/upload/FB_IMG_1615211893936.jpg.jpg)
+![Stackleague](/images/upload/FB_IMG_1615211893936.jpg.jpg)
 
 There's a new local all year round competition for developers launching this March at https://stackleague.com
 
