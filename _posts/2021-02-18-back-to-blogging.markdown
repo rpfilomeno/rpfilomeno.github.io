@@ -1,7 +1,7 @@
 ---
-layout:post
-title: "Back to blogging"
-date: 2021-02-18 01:43:54 +0800
+layout: post
+title:  "Back to blogging"
+date:   2021-02-18 01:43:54 +0800
 categories: announcement
 ---
 
