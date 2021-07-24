@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tumindig: Artist's Online Campaign"
-date:   2021-06-24 18:37:54 +0800
+date:   2021-07-24 18:37:54 +0800
 categories: design
 comments: true
 ---
