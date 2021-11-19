@@ -1,0 +1,104 @@
+---
+layout: page
+title: Gallery
+permalink: /gallery/
+---
+
+<div class="blurb">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Pure Random Photos</h3>
+        </div>
+        <div class="panel-body">
+
+            <p>Stuff I <span class="glyphicon glyphicon-heart"></span> to make on my spare time, yey!</p>
+
+            <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" data-dismiss="modal">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal"><span
+                                    aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <img src="/images/loading-cat.gif" class="imagepreview" style="width: 100%;">
+                        </div>
+                        <div class="modal-footer">
+                            <div class="col-xs-12">
+                                <p class="text-left"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="row">
+                    <hr>
+                    <div class="gal">
+                        <a href="#" class="pop"><img src="photo/279px/th_amongus-sus.jpg" alt="TEST"
+                                data-src="photo/amongus-sus.jpg"></a>
+                        <a href="#" class="pop"><img src="photo/279px/th_candies.jpg" alt=""
+                                data-src="photo/candies.jpg"></a>
+                        <a href="#" class="pop"><img src="photo/279px/th_maki.jpg" alt="" data-src="photo/maki.jpg"></a>
+                        <a href="#" class="pop"><img src="photo/279px/th_wannabe-frames.gif" alt=""
+                                data-src="photo/wannabe-frames.gif"></a>
+                        <a href="#" class="pop"><img src="photo/279px/th_anon-tindig.png" alt=""
+                                data-src="photo/anon-tindig.png"></a>
+                        <a href="#" class="pop"><img src="photo/279px/th_it-logo.jpeg" alt=""
+                                data-src="photo/it-logo.jpeg"></a>
+                        <a href="#" class="pop"><img src="photo/279px/th_travel.jpg" alt=""
+                                data-src="photo/travel.jpg"></a>
+                        <a href="#" class="pop"><img src="photo/279px/th_wannabe-globe.gif" alt=""
+                                data-src="photo/wannabe-globe.gif"></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+
+        $('#imagemodal').on('hidden', function () {
+            $('.imagepreview').attr('src', '/images/loading-cat.gif');
+        })
+
+        $('.pop').on('click', function () {
+
+            var imgsrc = $(this).find('img').attr('data-src');
+            var description = $(this).find('img').attr('alt');
+
+            function PreloadImage(imgSrc, callback) {
+                var objImagePreloader = new Image();
+
+                objImagePreloader.src = imgSrc;
+                if (objImagePreloader.complete) {
+                    callback();
+                    objImagePreloader.onload = function () {};
+                } else {
+                    objImagePreloader.onload = function () {
+                        callback();
+                        //    clear onLoad, IE behaves irratically with animated gifs otherwise
+                        objImagePreloader.onload = function () {};
+                    }
+                }
+            }
+
+
+            $('#imagemodal').find('.modal-footer p').text(description);
+
+            PreloadImage(imgsrc, function () {
+                $('.imagepreview').attr('src', '/images/loading-cat.gif');
+                $('#imagemodal').modal('show');
+                PreloadImage(imgsrc, function () {
+                    $('.imagepreview').attr('src', imgsrc);
+                    $('#imagemodal').modal('show');
+                });
+            });
+
+        });
+    });
+</script>

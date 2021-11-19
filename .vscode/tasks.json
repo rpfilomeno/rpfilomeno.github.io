@@ -1,0 +1,37 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Serve",
+            "type": "shell",
+            "command": "jekyll serve --watch --incremental --force_polling",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "isBackground": true
+        },
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "jekyll build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Thumbnails",
+            "type": "shell",
+            "command": "xargs -n 1 -I{} convert ./gallery/photo/{} -resize 279x gallery/photo/279px/th_{} < <(find ./gallery/photo/ -maxdepth 1 -type f -name '*.*' -print | cut -d/ -f4-)",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}

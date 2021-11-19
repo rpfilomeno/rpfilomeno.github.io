@@ -13,20 +13,28 @@ title: Home
             hosted here on GitHub so feel free to check them out or contact me if you like to collaborate
             on a project. If you want to know more about me, <a href="/about">read about my life here...</a></p>
     </div>   
-
   
 
 </div><!-- /.blurb -->
+
 
 <div class="clearfix"></div>
 
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Language proficiency</h3>
+    <h3 class="panel-title">My Proficiency</h3>
   </div>
   <div class="panel-body">
 	
 	<h4>PHP: Hypertext Preprocessor</h4>
+  	<div class="progress">
+	  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+	    <span class="sr-only">Expert</span>
+	  </div>
+	</div>
+
+
+	<h4>Cloud Computing: AWS, ELK, K8s, Serverless and Terraform</h4>
   	<div class="progress">
 	  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
 	    <span class="sr-only">Expert</span>
@@ -34,16 +42,24 @@ title: Home
 	</div>
 
 
-	<h4>HTML, JavaScript and CSS</h4>
+	<h4>HTML, JavaScript/Node and CSS</h4>
   	<div class="progress">
 	  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
 	    <span class="sr-only">Expert</span>
 	  </div>
 	</div>
 
+
+	<h4>PCI-DSS Compliance</h4>
+  	<div class="progress">
+	  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+	    <span class="sr-only">Master</span>
+	  </div>
+	</div>
+
 	<h4>Visual Basic, C# .Net Framework</h4>
 	<div class="progress">
-	  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+	  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
 	    <span class="sr-only">Master</span>
 	  </div>
 	</div>
@@ -76,7 +92,8 @@ title: Home
 	  </div>
 	</div>
 	
-	<h4>Other Languages</h4>
+	
+	<h4>Other Stack</h4>
 	<span class="label label-default">Perl</span>
 	<span class="label label-default">Bash</span>
 	<span class="label label-default">Flash, Actionscript, Flex</span>
@@ -90,12 +107,50 @@ title: Home
   </div>
 </div>
 
-
 <div class="panel panel-default">
   <div class="panel-heading">
   	<h3 class="panel-title">Github projects (featured)</h3>
   </div>
   <div class="panel-body">
+
+		<div class="media">
+		  <div class="media-left media-middle" style="float: left;">
+		    <a href="https://github.com/rpfilomeno/bref-vpc-starter">
+		      <img class="media-object" src="images/serverless-icon.png" alt="Bref PHP Starter Kit" width="64" height="64">
+		    </a>
+		  </div>
+		  <div class="media-body">
+		    <h4 class="media-heading"><a href="https://github.com/rpfilomeno/bref-vpc-starter">rpfilomeno/bref-vpc-starter</a></h4>
+		    A boilerplate for running PHP websites in AWS Lamda using Serverless framework and Bref. Features includes stages, Localstack testing, and SSM Secrets. Enabled VPC access to allow you to connect into your EC2, RDS and the Internet securely via the NAT Gateway.
+		  </div>
+		</div>
+
+
+		<div class="media">
+		  <div class="media-left media-middle" style="float: left;">
+		    <a href="https://github.com/rpfilomeno/stacksleague">
+		      <img class="media-object" src="images/stacksleague-icon.png" alt="Stacks League Challenges" width="64" height="64">
+		    </a>
+		  </div>
+		  <div class="media-body">
+		    <h4 class="media-heading"><a href="https://github.com/rpfilomeno/stacksleague">rpfilomeno/stacksleague</a></h4>
+		    A boilerplate for solving Stacks League Challenges by allowing you to use the problems own unit tests to check your solution code locally before submitting.
+		  </div>
+		</div>
+
+
+		<div class="media">
+		  <div class="media-left media-middle" style="float: left;">
+		    <a href="https://github.com/rpfilomeno/Buyline-CardsAPI">
+		      <img class="media-object" src="images/bnz-icon.png" alt="Bank of New Zealand" width="64" height="64">
+		    </a>
+		  </div>
+		  <div class="media-body">
+		    <h4 class="media-heading"><a href="https://github.com/rpfilomeno/Buyline-CardsAPI">rpfilomeno/Buyline-CardsAPI</a></h4>
+		    Pure PHP implementation of Buy-Line SWIG API used by Bank of New Zealand.
+		  </div>
+		</div>
+
 
         <div class="media">
 		  <div class="media-left media-middle" style="float: left;">
@@ -104,7 +159,7 @@ title: Home
 		    </a>
 		  </div>
 		  <div class="media-body">
-		    <h4 class="media-heading">voip-mon-aws-cloudwatch</h4>
+		    <h4 class="media-heading"><a href="https://github.com/rpfilomeno/voip-mon-aws-cloudwatch">rpfilomeno/voip-mon-aws-cloudwatch</a></h4>
 		    A monitoring script for Kamailio and Asterisk for AWS CloudWatch written in PHP. This works similarly to AWS CloudWatch Monitoring Script (Linux).
 		  </div>
 		</div>
@@ -116,7 +171,7 @@ title: Home
 		    </a>
 		  </div>
 		  <div class="media-body">
-		    <h4 class="media-heading">tr069config</h4>
+		    <h4 class="media-heading"><a href="https://github.com/rpfilomeno/tr069config">rpfilomeno/tr069config</a></h4>
 		    CLI based tool written on PHP to configures Huawei eSpace devices, this also provides the Auto Configuration Servers (ACS) component.
 		  </div>
 		</div>
@@ -128,7 +183,7 @@ title: Home
 		    </a>
 		  </div>
 		  <div class="media-body">
-		    <h4 class="media-heading">tokenizer</h4>
+		    <h4 class="media-heading"><a href="https://github.com/rpfilomeno/tokenizer">rpfilomeno/tokenizer</a></h4>
 		    REST based Token Server that receives Credit Card PANs securely and returns a token hash.
 		  </div>
 		</div>
@@ -140,7 +195,7 @@ title: Home
 		    </a>
 		  </div>
 		  <div class="media-body">
-		    <h4 class="media-heading">URLTester</h4>
+		    <h4 class="media-heading"><a href="https://github.com/rpfilomeno/URLTester">rpfilomeno/URLTester</a></h4>
 		    Test the URL's load time.
 		  </div>
 		</div>
@@ -160,7 +215,7 @@ title: Home
 		    </a>
 		  </div>
 		  <div class="media-body">
-		    <h4 class="media-heading">Cellular Data-offloading Through Wifi-mesh Network Utilizing White-space Frequencies</h4>
+		    <h4 class="media-heading"><a href="http://www.slideshare.net/RogerFilomeno/cellular-data-offloading-through-wifi-mesh-network-utilizing-white-space-frequencies-wp">Cellular Data-offloading Through Wifi-mesh Network Utilizing White-space Frequencies</a></h4>
 		    Draft whitepaper that present an idea using RFC4185 (EAP-SIM) for mobile networks to offload its data users to local WIFI networks.
 		  </div>
 		</div>
