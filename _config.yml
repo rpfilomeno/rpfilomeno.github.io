@@ -28,6 +28,7 @@ exclude:
 - vendor
 - serve.cmd
 - build.cmd
+- node_modules
 
 # Build settings
 markdown: kramdown
