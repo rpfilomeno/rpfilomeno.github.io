@@ -43,7 +43,7 @@ $on-laptop:        800px;
     }
 }
 
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -56,4 +56,4 @@ $on-laptop:        800px;
         "share"
 ;
 
-@import "node_modules/bootstrap-3-card/sass/card";
+@import "../node_modules/bootstrap-3-card/sass/card";
