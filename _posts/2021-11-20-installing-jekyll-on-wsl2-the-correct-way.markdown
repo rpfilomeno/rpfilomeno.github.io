@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Installing Jekyll on WSL2 Ubuntu the correct way"
-date:   2021-03-08 11:05:54 +0800
 categories: wls2
 tags:
  -wsl
