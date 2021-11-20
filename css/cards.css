@@ -1,0 +1,78 @@
+.card-top-image {
+  border: 2px solid black;
+  padding: 5px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-container {
+  width: 30%;
+  float: left;
+  height: 100%;
+}
+.card-main {
+  display: flex;
+  flex-flow: wrap;
+}
+.card-container .card {
+  height: fit-content;
+  display: inline-block;
+}
+
+.card-title-shadow {
+  padding: 2px;
+  color: white;
+  background: rgb(204, 204, 204);
+  /* Fallback for older browsers without RGBA-support */
+  background: rgba(27, 27, 27, 0.7);
+}
+
+.card-top-image  a {
+  color: white;
+}
+
+.card-top-image  a:visited {
+  color: white;
+}
+
+.card-top-image  a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.post-tags a {
+  color: white;
+}
+
+.post-tags a:visited {
+  color: white;
+}
+
+.post-categories a {
+  color: #2a7ae2;
+}
+
+.post-tags a:visited {
+  color:#2a7ae2;
+}
+
+.post-image {
+  margin: 10px;
+}
+
+.post-image img{
+  width: 100%;
+  border-radius: 3%;
+  border-color: rgb(60, 64, 66);
+  border-width: 5px;
+  border-style: solid;
+}
+
+.panel-body .categories {
+  line-height: 2;
+}
+
+a.label-default:visited {
+  color: white;
+}   

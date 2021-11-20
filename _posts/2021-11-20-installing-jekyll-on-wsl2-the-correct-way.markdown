@@ -2,16 +2,23 @@
 layout: post
 title:  "Installing Jekyll on WSL2 Ubuntu the correct way"
 categories: wls2
+thumbnail: "/images/thumb/th_lorem.png"
+image: "/images/lorem.png"
+author: "rpfilomeno"
+comments: true
 tags:
- -wsl
- -windows
+ - wsl2
+ - windows
+ - jekyll
 ---
+
 
 I you have installed Jekyll in WSL2 Ubuntu via apt-get then you might end up with this error:
 
 ```text
 undefined method `delegate_method_as' for Jekyll::Drops::CollectionDrop:Class (NoMethodError) Did you mean? DelegateClass
 ```
+<!--break-->
 
 Here is the quick fix:
 

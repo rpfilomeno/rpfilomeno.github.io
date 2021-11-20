@@ -4,15 +4,52 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <h1 class="post-title" itemprop="name headline">
+      <div class="post-categories pull-left">
+        {% if post %} 
+          {% assign categories = post.categories %}
+        {% else %}
+          {% assign categories = page.categories %}
+        {% endif %}
+        
+        {% for category in categories %}
+        <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+        {% unless forloop.last %}&nbsp;{% endunless %}
+        {% endfor %}
+    
+        {% if categories %}&#10097;&nbsp;{% endif %}
+      </div>
+    
+      {{ page.title }}
+    </h1>
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
   </header>
+
+  <div class="post-tags">
+    {% if post %} 
+      {% assign tags = post.tags %}
+    {% else %}
+      {% assign tags = page.tags %}
+    {% endif %}
+    {% for tag in tags %}
+    <a class="label label-default" href="{{site.baseurl}}/tags/#{{tag|slugize}}">#{{tag}}</a>
+    {% unless forloop.last %}&nbsp;{% endunless %}
+    {% endfor %}
+  </div>
+  <p></p>
+
+  {% if page.image %}
+  <div class="post-image">
+    <img src="{{ page.image}}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+
+  <p></p>
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
 
-</article>
 
 {% if page.comments %}
 <div id="disqus_thread"></div>

@@ -1,12 +1,80 @@
 ---
-layout: default
+layout: page
 title: Blog
 ---
-	<h1>{{ page.title }}</h1>
-	<ul class="posts">
 
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
-	
+<div class="blurb">
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Entries</h3>
+		</div>
+		<div class="panel-body">
+
+			<p>Stuff I <span class="glyphicon glyphicon-heart"></span> to talk about!</p>
+			<div class="posts row card-main">
+
+				{% for post in site.posts %}
+				<div class="card-container">
+					<div class="card">
+						{% if post.thumbnail %}
+						<div class="card-top-image"							
+							style="background-image: url('{{ post.thumbnail }}');">
+							<h3 class="card-title card-title-shadow">
+								<a class="card-link" href="{{ post.url }}">{{ post.title }}</a>
+							</h3>
+						</div>
+						{% else %}
+						<div class="card-top-image"							
+							style="background-image: url('{{ "/images/thumb/th_lorem.png" | prepend: site.baseurl }}');">
+							<h3 class="card-title card-title-shadow">
+								<a class="card-link" href="{{ post.url }}">{{ post.title }}</a>
+							</h3>
+						</div>
+						{% endif %}
+						<div class="card-block">
+							
+							<p class="card-text"><span>{{ post.date | date_to_string }}</span> »
+								{{ post.content | split:'<!--break-->' | first }}</p>
+							{% if post.content contains '<!--break-->' %}
+							<h3>...</h3>
+							<a class="card-link" href="{{ post.url }}" class="btn btn-primary">Read more</a>
+							{% endif %}
+
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Categories</h3>
+		</div>
+		<div class="panel-body">
+			<h3 class="categories">
+				{% for category in site.categories %}
+				{% capture category_name %}{{ category | first }}{% endcapture %}
+				<a class="label label-default" style="margin-top: 20px"
+					href="{{site.baseurl}}/categories/#{{ category_name }}"
+					title="{{ category_name }}">{{ category_name }}</a>
+				{% endfor %}
+			</h3>
+		</div>
+	</div <div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Tags</h3>
+	</div>
+	<div class="panel-body">
+		<h4 class="tags" style="line-height: 2;">
+			{% for tag in site.tags %}
+			{% capture tag_name %}{{ tag | first }}{% endcapture %}
+			<a class="label label-default" style="margin-top: 20px;" href="{{site.baseurl}}/tags/#{{ tag_name }}"
+				title="{{ tag_name }}">#{{ tag_name }}</a>
+			{% endfor %}
+		</h4>
+	</div>
+</div>>
+</div>

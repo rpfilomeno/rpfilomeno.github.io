@@ -20,7 +20,17 @@
 	"extensions": [
 		"ginfuru.ginfuru-vscode-jekyll-syntax",
 		"kisstkondoros.vscode-gutter-preview",
-		"hookyqr.beautify"
+		"hookyqr.beautify",
+		"yzhang.markdown-all-in-one",
+		"thekalinga.bootstrap4-vscode",
+		"xabikos.javascriptsnippets",
+		"sarahridge.vscode-ruby-syntax",
+		"mgmcdermott.vscode-language-babel",
+		"eamodio.gitlens",
+		"ecmel.vscode-html-css",
+		"davidanson.vscode-markdownlint",
+		"christian-kohler.path-intellisense",
+		"gruntfuggly.todo-tree"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.

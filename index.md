@@ -116,7 +116,7 @@ title: Home
 		<div class="media">
 		  <div class="media-left media-middle" style="float: left;">
 		    <a href="https://github.com/rpfilomeno/bref-vpc-starter">
-		      <img class="media-object" src="images/serverless-icon.png" alt="Bref PHP Starter Kit" width="64" height="64">
+		      <img class="media-object" src="images/thumb/th_serverless-icon.png" alt="Bref PHP Starter Kit" width="64" height="64">
 		    </a>
 		  </div>
 		  <div class="media-body">
@@ -129,7 +129,7 @@ title: Home
 		<div class="media">
 		  <div class="media-left media-middle" style="float: left;">
 		    <a href="https://github.com/rpfilomeno/stacksleague">
-		      <img class="media-object" src="images/stacksleague-icon.png" alt="Stacks League Challenges" width="64" height="64">
+		      <img class="media-object" src="images/thumb/th_stacksleague-icon.png" alt="Stacks League Challenges" width="64" height="64">
 		    </a>
 		  </div>
 		  <div class="media-body">
@@ -142,7 +142,7 @@ title: Home
 		<div class="media">
 		  <div class="media-left media-middle" style="float: left;">
 		    <a href="https://github.com/rpfilomeno/Buyline-CardsAPI">
-		      <img class="media-object" src="images/bnz-icon.png" alt="Bank of New Zealand" width="64" height="64">
+		      <img class="media-object" src="images/thumb/th_bnz-icon.png" alt="Bank of New Zealand" width="64" height="64">
 		    </a>
 		  </div>
 		  <div class="media-body">
@@ -155,7 +155,7 @@ title: Home
         <div class="media">
 		  <div class="media-left media-middle" style="float: left;">
 		    <a href="https://github.com/rpfilomeno/voip-mon-aws-cloudwatch">
-		      <img class="media-object" src="images/th-aws-64x64.png" alt="VOIP Statistics to AWS CloudWatch" width="64" height="64">
+		      <img class="media-object" src="images/thumb/th-aws-64x64.png" alt="VOIP Statistics to AWS CloudWatch" width="64" height="64">
 		    </a>
 		  </div>
 		  <div class="media-body">
@@ -167,7 +167,7 @@ title: Home
 		<div class="media">
 		  <div class="media-left media-middle" style="float: left;">
 		    <a href="https://github.com/rpfilomeno/tr069config">
-		      <img class="media-object" src="images/th-huawei-64x64.png" alt="TR069Config for Huawei eSpace devices" width="64" height="64">
+		      <img class="media-object" src="images/thumb/th-huawei-64x64.png" alt="TR069Config for Huawei eSpace devices" width="64" height="64">
 		    </a>
 		  </div>
 		  <div class="media-body">
@@ -179,7 +179,7 @@ title: Home
 		<div class="media">
 		  <div class="media-left media-middle" style="float: left;">
 		    <a href="https://github.com/rpfilomeno/tokenizer">
-		      <img class="media-object" src="images/th-apigility-64x64.png" alt="Tokenizer" width="64" height="64">
+		      <img class="media-object" src="images/thumb/th-apigility-64x64.png" alt="Tokenizer" width="64" height="64">
 		    </a>
 		  </div>
 		  <div class="media-body">
@@ -191,7 +191,7 @@ title: Home
 		<div class="media">
 		  <div class="media-left media-middle" style="float: left;">
 		    <a href="https://github.com/rpfilomeno/URLTester">
-		      <img class="media-object" src="images/th-url-64x64.png" alt="Tokenizer" width="64" height="64">
+		      <img class="media-object" src="images/thumb/th-url-64x64.png" alt="Tokenizer" width="64" height="64">
 		    </a>
 		  </div>
 		  <div class="media-body">
@@ -211,7 +211,7 @@ title: Home
   	<div class="media">
 		  <div class="media-left media-middle" style="float: left;">
 		    <a href="http://www.slideshare.net/RogerFilomeno/cellular-data-offloading-through-wifi-mesh-network-utilizing-white-space-frequencies-wp">
-		      <img class="media-object" src="images/th-slideshare-64x64.png" alt="Tokenizer" width="64" height="64">
+		      <img class="media-object" src="images/thumb/th-slideshare-64x64.png" alt="Tokenizer" width="64" height="64">
 		    </a>
 		  </div>
 		  <div class="media-body">

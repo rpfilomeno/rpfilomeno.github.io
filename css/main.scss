@@ -28,7 +28,7 @@ $content-width:    1024px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -55,3 +55,5 @@ $on-laptop:        800px;
         "about",
         "share"
 ;
+
+@import "node_modules/bootstrap-3-card/sass/card";
