@@ -31,3 +31,21 @@ sudo gem install jekyll jekyll-feed jekyll-gist jekyll-paginate jekyll-sass-conv
 ```bash
 bundle update
 ```
+
+If you encounter this error when using ```gem install```:
+
+```text
+ERROR:  While executing gem ... (ArgumentError)
+    wrong number of arguments (given 4, expected 1)
+```
+
+You can use this fix:
+
+```bash
+gem uninstall psych
+```
+
+```bash
+gem install activesupport -v '6.0.4.1' --source 'https://rubygems.org/'
+```
+
