@@ -12,11 +12,11 @@ title: Blog
 		<div class="panel-body">
 
 			<p>Stuff I <span class="glyphicon glyphicon-heart"></span> to talk about!</p>
-			<div class="posts row card-main">
+			<div class="posts card-main">
 
 				{% for post in site.posts %}
 				<div class="card-container">
-					<div class="card">
+					<div class="card blog-card">
 						{% if post.thumbnail %}
 						<div class="card-top-image"							
 							style="background-image: url('{{ post.thumbnail }}');">
