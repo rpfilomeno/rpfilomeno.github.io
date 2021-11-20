@@ -21,6 +21,10 @@ sudo apt remove --purge $PACKAGES
 ```
 
 ```bash
+sudo apt autoremove
+```
+
+```bash
 sudo gem install jekyll jekyll-feed jekyll-gist jekyll-paginate jekyll-sass-converter jekyll-coffeescript
 ```
 
