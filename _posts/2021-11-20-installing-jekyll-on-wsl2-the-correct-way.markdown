@@ -2,8 +2,8 @@
 layout: post
 title:  "Installing Jekyll on WSL2 Ubuntu the correct way"
 categories: wls2
-thumbnail: "/images/thumb/th_lorem.png"
-image: "/images/lorem.png"
+thumbnail: "/images/thumb/th_jekyll.png"
+image: "/images/jekyll.png"
 author: "rpfilomeno"
 comments: true
 tags:
