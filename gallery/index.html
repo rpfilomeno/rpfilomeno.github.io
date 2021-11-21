@@ -8,7 +8,15 @@ permalink: /gallery/
 
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">Pure Random Photos</h3>
+            <div class="dropdown gallery-dropdown">
+                <span id="dLabel" role="button" data-toggle="dropdown" class="btn btn-primary">
+                    Pure Random Photos <span class="caret"></span>
+                </span>
+                <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                    <li><a href="{{ "/gallery/" | prepend: site.baseurl }}">CleverCloud</a></li>
+                    <li><a href="{{ "/gallery/" | prepend: site.baseurl }}">Crosspoint</a></li>
+                </ul>
+            </div>
         </div>
         <div class="panel-body">
 
@@ -21,7 +29,8 @@ permalink: /gallery/
                         <div class="modal-body">
                             <button type="button" class="close" data-dismiss="modal"><span
                                     aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            <img src="{{ "/images/loading-cat.gif" | prepend: site.baseurl }}" class="imagepreview" style="width: 100%;">
+                            <img src="{{ "/images/loading-cat.gif" | prepend: site.baseurl }}" class="imagepreview"
+                                style="width: 100%;" alt="loading">
                         </div>
                         <div class="modal-footer">
                             <div class="col-xs-12">
@@ -36,13 +45,30 @@ permalink: /gallery/
                 <div class="row">
                     <hr>
                     <div class="gal">
-                        <a href="#" class="pop"><img src="{{ "/gallery/photo/279px/th_amongus-sus.jpg" | prepend: site.baseurl }}"  alt="TEST" data-src="{{ "/gallery/photo/amongus-sus.jpg" | prepend: site.baseurl }}"></a>
-                        <a href="#" class="pop"><img src="{{ "/gallery/photo/279px/th_candies.jpg" | prepend: site.baseurl }}" alt="" data-src="{{ "/gallery/photo/maki.jpg" | prepend: site.baseurl }}"></a>
-                        <a href="#" class="pop"><img src="{{ "/gallery/photo/279px/th_wannabe-frames.gif" | prepend: site.baseurl }}" alt="" data-src="{{ "/gallery/photo/wannabe-frames.gif" | prepend: site.baseurl }}"></a>
-                        <a href="#" class="pop"><img src="{{ "/gallery/photo/279px/th_anon-tindig.png" | prepend: site.baseurl }}" alt="" data-src="{{ "/gallery/photo/anon-tindig.png" | prepend: site.baseurl }}"></a>
-                        <a href="#" class="pop"><img src="{{ "/gallery/photo/279px/th_it-logo.jpeg" | prepend: site.baseurl }}" alt="" data-src="{{ "/gallery/photo/it-logo.jpeg" | prepend: site.baseurl }}"></a>
-                        <a href="#" class="pop"><img src="{{ "/gallery/photo/279px/th_travel.jpg" | prepend: site.baseurl }}" alt="" data-src="{{ "/gallery/photo/travel.jpg" | prepend: site.baseurl }}"></a>
-                        <a href="#" class="pop"><img src="{{ "/gallery/photo/279px/th_wannabe-globe.gif" | prepend: site.baseurl }}" alt="" data-src="{{ "/gallery/photo/wannabe-globe.gif" | prepend: site.baseurl }}"></a>
+                        <a href="#" class="pop"><img
+                                src="{{ "/gallery/photo/279px/th_amongus-sus.jpg" | prepend: site.baseurl }}" alt="Among Us version of #tumindig avatar."
+                                data-src="{{ "/gallery/photo/amongus-sus.jpg" | prepend: site.baseurl }}"></a>
+                        <a href="#" class="pop"><img
+                                src="{{ "/gallery/photo/279px/th_candies.jpg" | prepend: site.baseurl }}" alt="Chocolate wrappings during Valentines at a street market."
+                                data-src="{{ "/gallery/photo/candies.jpg" | prepend: site.baseurl }}"></a>
+                        <a href="#" class="pop"><img
+                                    src="{{ "/gallery/photo/279px/th_maki.jpg" | prepend: site.baseurl }}" alt="Macro shot of a California Maki sushi."
+                                    data-src="{{ "/gallery/photo/maki.jpg" | prepend: site.baseurl }}"></a>
+                        <a href="#" class="pop"><img
+                                src="{{ "/gallery/photo/279px/th_wannabe-frames.gif" | prepend: site.baseurl }}" alt="Editing 3D Model of an avatar used by vTuber."
+                                data-src="{{ "/gallery/photo/wannabe-frames.gif" | prepend: site.baseurl }}"></a>
+                        <a href="#" class="pop"><img
+                                src="{{ "/gallery/photo/279px/th_anon-tindig.png" | prepend: site.baseurl }}" alt="Anonymous version of #tumindig avatar."
+                                data-src="{{ "/gallery/photo/anon-tindig.png" | prepend: site.baseurl }}"></a>
+                        <a href="#" class="pop"><img
+                                src="{{ "/gallery/photo/279px/th_it-logo.jpeg" | prepend: site.baseurl }}" alt="Logo for Philippine IT Specialist group on Clubhouse."
+                                data-src="{{ "/gallery/photo/it-logo.jpeg" | prepend: site.baseurl }}"></a>
+                        <a href="#" class="pop"><img
+                                src="{{ "/gallery/photo/279px/th_travel.jpg" | prepend: site.baseurl }}" alt="Logo for a Facebook page."
+                                data-src="{{ "/gallery/photo/travel.jpg" | prepend: site.baseurl }}"></a>
+                        <a href="#" class="pop"><img
+                                src="{{ "/gallery/photo/279px/th_wannabe-globe.gif" | prepend: site.baseurl }}" alt="Full 3D moder render with cartoonish light effects. "
+                                data-src="{{ "/gallery/photo/wannabe-globe.gif" | prepend: site.baseurl }}"></a>
 
                     </div>
                 </div>
@@ -83,7 +109,8 @@ permalink: /gallery/
             $('#imagemodal').find('.modal-footer p').text(description);
 
             PreloadImage(imgsrc, function () {
-                $('.imagepreview').attr('src', '{{ "/images/loading-cat.gif" | prepend: site.baseurl }}');
+                $('.imagepreview').attr('src',
+                    '{{ "/images/loading-cat.gif" | prepend: site.baseurl }}');
                 $('#imagemodal').modal('show');
                 PreloadImage(imgsrc, function () {
                     $('.imagepreview').attr('src', imgsrc);
