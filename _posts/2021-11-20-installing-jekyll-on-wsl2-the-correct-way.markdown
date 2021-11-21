@@ -16,7 +16,7 @@ tags:
 I you have installed Jekyll in WSL2 Ubuntu via apt-get then you might end up with this error:
 
 ```text
-undefined method `delegate_method_as' for Jekyll::Drops::CollectionDrop:Class (NoMethodError) Did you mean? DelegateClass
+undefined method `delegate_method_as' for Jekyll::Drops::CollectionDrop:Class (NoMethodError)
 ```
 <!--break-->
 
@@ -39,7 +39,7 @@ sudo gem install jekyll jekyll-feed jekyll-gist jekyll-paginate jekyll-sass-conv
 bundle update
 ```
 
-If you encounter this error when using ```gem install```:
+If you encounter this error when running ```gem install```:
 
 ```text
 ERROR:  While executing gem ... (ArgumentError)
