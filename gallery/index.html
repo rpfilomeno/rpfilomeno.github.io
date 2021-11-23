@@ -73,7 +73,7 @@ permalink: /gallery/
                                 data-src="{{ "/gallery/photo/wannabe-globe.gif" | prepend: site.baseurl }}"></a>
                         <a href="#" class="pop"><img
                                 src="{{ "/gallery/photo/279px/th_wannabe-mmd.webp" | prepend: site.baseurl }}" alt="Full 3D moder render with cartoonish light effects. "
-                                data-src="https://www.youtube.com/embed/tHhzE2hfXfU"></a>
+                                data-src="embed/tHhzE2hfXfU"></a>
 
                     </div>
                 </div>
@@ -113,21 +113,26 @@ permalink: /gallery/
 
             $('#imagemodal').find('.modal-footer p').text(description);
 
-            PreloadImage(imgsrc, function () {
-                $('.imagepreview').attr('src',
-                    '{{ "/images/loading-cat.gif" | prepend: site.baseurl }}');
-                $('#imagemodal').modal('show');
-
-                if (/^https:\/\/youtu/.test(imgsrc)) {
-                    embedcode = '<iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/tHhzE2hfXfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            if (/^embed\//.test(imgsrc)) {
+                embedcode = '<div class="embed-container"><iframe id="video" width="100%" height="auto" src="//www.youtube.com/'+imgsrc+'?rel=0" frameborder="0" allowfullscreen></iframe></div>';
                     $('#imagemodal').find('.asset-holder').html(embedcode);
-                } else {
-                    PreloadImage(imgsrc, function () {
-                    $('.imagepreview').attr('src', imgsrc);
                     $('#imagemodal').modal('show');
+
+
+            } else {
+                PreloadImage(imgsrc, function () {
+                    $('.imagepreview').attr('src',
+                        '{{ "/images/loading-cat.gif" | prepend: site.baseurl }}');
+                    $('#imagemodal').modal('show');
+
+                        PreloadImage(imgsrc, function () {
+                        $('.imagepreview').attr('src', imgsrc);
+                        $('#imagemodal').modal('show');
+                    });
                 });
-                }
-            });
+            }
+
+            
 
         });
     });

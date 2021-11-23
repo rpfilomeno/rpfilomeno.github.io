@@ -14,7 +14,7 @@
     -moz-column-count: 1;
     /* Firefox */
     column-count: 1;
-  
+
   }
 }
 
@@ -23,12 +23,14 @@
   width: 100%;
   height: 100%;
   float: left;
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
 }
+
 .card-container .card {
 
   display: inline-block;
 }
+
 .card-top-image {
   border-radius: 10px;
   padding: 5px;
@@ -48,15 +50,15 @@
   background: rgba(27, 27, 27, 0.7);
 }
 
-.card-top-image  a {
+.card-top-image a {
   color: white;
 }
 
-.card-top-image  a:visited {
+.card-top-image a:visited {
   color: white;
 }
 
-.card-top-image  a:hover {
+.card-top-image a:hover {
   color: white;
   text-decoration: underline;
 }
@@ -74,7 +76,7 @@
 }
 
 .post-tags a:visited {
-  color:#2a7ae2;
+  color: #2a7ae2;
 }
 
 .post-image {
@@ -82,7 +84,7 @@
   background-color: rgb(60, 64, 66);
 }
 
-.post-image img{
+.post-image img {
   width: 100%;
   border-radius: 10px;
   border-color: rgb(60, 64, 66);
@@ -96,7 +98,7 @@
 
 a.label-default:visited {
   color: white;
-}   
+}
 
 .blog-card {
   width: 100%;
@@ -154,4 +156,22 @@ a.label-default:visited {
 .gallery-dropdown a:visited {
   color: black;
 
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
