@@ -72,7 +72,7 @@ permalink: /gallery/
                                 src="{{ "/gallery/photo/279px/th_wannabe-globe.gif" | prepend: site.baseurl }}" alt="Full 3D moder render with cartoonish light effects. "
                                 data-src="{{ "/gallery/photo/wannabe-globe.gif" | prepend: site.baseurl }}"></a>
                         <a href="#" class="pop"><img
-                                src="{{ "/gallery/photo/279px/th_wannabe-mmd.webp" | prepend: site.baseurl }}" alt="Full 3D moder render with cartoonish light effects. "
+                                src="{{ "/gallery/photo/279px/th_wannabe-mmd.webp" | prepend: site.baseurl }}" alt="Loading 3D Model into MMD and rendering motion capture sequences for a dance track."
                                 data-src="embed/tHhzE2hfXfU"></a>
 
                     </div>
@@ -120,16 +120,17 @@ permalink: /gallery/
 
 
             } else {
-                PreloadImage(imgsrc, function () {
-                    $('.imagepreview').attr('src',
-                        '{{ "/images/loading-cat.gif" | prepend: site.baseurl }}');
-                    $('#imagemodal').modal('show');
+                embedcode = '<img src="{{ "/images/loading-cat.gif" | prepend: site.baseurl }}" class="imagepreview" style="width: 100%;" alt="loading">';
+                $('#imagemodal').find('.asset-holder').html(embedcode);
 
-                        PreloadImage(imgsrc, function () {
-                        $('.imagepreview').attr('src', imgsrc);
-                        $('#imagemodal').modal('show');
-                    });
+                $('#imagemodal').modal('show');
+
+ 
+                PreloadImage(imgsrc, function () {
+                    $('.imagepreview').attr('src', imgsrc);
+                    
                 });
+
             }
 
             
