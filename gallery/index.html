@@ -29,8 +29,10 @@ permalink: /gallery/
                         <div class="modal-body">
                             <button type="button" class="close" data-dismiss="modal"><span
                                     aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            <img src="{{ "/images/loading-cat.gif" | prepend: site.baseurl }}" class="imagepreview"
+                            <dv class="asset-holder">
+                                <img src="{{ "/images/loading-cat.gif" | prepend: site.baseurl }}" class="imagepreview"
                                 style="width: 100%;" alt="loading">
+                            </dv>
                         </div>
                         <div class="modal-footer">
                             <div class="col-xs-12">
@@ -69,6 +71,9 @@ permalink: /gallery/
                         <a href="#" class="pop"><img
                                 src="{{ "/gallery/photo/279px/th_wannabe-globe.gif" | prepend: site.baseurl }}" alt="Full 3D moder render with cartoonish light effects. "
                                 data-src="{{ "/gallery/photo/wannabe-globe.gif" | prepend: site.baseurl }}"></a>
+                        <a href="#" class="pop"><img
+                                src="{{ "/gallery/photo/279px/th_wannabe-mmd.webp" | prepend: site.baseurl }}" alt="Full 3D moder render with cartoonish light effects. "
+                                data-src="https://www.youtube.com/embed/tHhzE2hfXfU"></a>
 
                     </div>
                 </div>
@@ -112,10 +117,16 @@ permalink: /gallery/
                 $('.imagepreview').attr('src',
                     '{{ "/images/loading-cat.gif" | prepend: site.baseurl }}');
                 $('#imagemodal').modal('show');
-                PreloadImage(imgsrc, function () {
+
+                if (/^https:\/\/youtu/.test(imgsrc)) {
+                    embedcode = '<iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/tHhzE2hfXfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                    $('#imagemodal').find('.asset-holder').html(embedcode);
+                } else {
+                    PreloadImage(imgsrc, function () {
                     $('.imagepreview').attr('src', imgsrc);
                     $('#imagemodal').modal('show');
                 });
+                }
             });
 
         });
