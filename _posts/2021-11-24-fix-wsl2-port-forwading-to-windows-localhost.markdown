@@ -14,6 +14,8 @@ tags:
 
 If your WSL2 Linux is not port forwarding directly to Windows localhost address then use this Powershell script to manually set the ports you need exposed.
 
+<!--break-->
+
 ```powershell
 # Port forwards from WSL virtual machine to Win10 host firewall
 # Bind a specific host ip addr or use 0.0.0.0 default
