@@ -13,7 +13,7 @@ tags:
 ---
 
 
-I you have installed Jekyll in WSL2 Ubuntu via apt-get then you might end up with this error:
+If you have installed Jekyll in WSL2 Ubuntu via apt-get then you might end up with this error:
 
 ```text
 undefined method `delegate_method_as' for Jekyll::Drops::CollectionDrop:Class (NoMethodError)
