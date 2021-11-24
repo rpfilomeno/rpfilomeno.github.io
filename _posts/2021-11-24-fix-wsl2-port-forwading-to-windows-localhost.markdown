@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fix WSL2 Port Forwarding to Windows Localhonst"
+title: "Fix WSL2 Port Forwarding to Windows Localhost"
 categories: powershell
 thumbnail: "/images/thumb/th_lorem.png"
 image: "/images/lorem.png"
