@@ -30,7 +30,7 @@ class Jekyll < Thor
       post.puts "---"
       post.puts "Summary of your post that shows up in the preview."
       post.puts "<!--break-->"
-      post.post "Put here the main body of your post."
+      post.puts "Put here the main body of your post."
     end
 
     system(options[:editor], filename)
