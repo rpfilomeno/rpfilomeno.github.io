@@ -1,0 +1,21 @@
+@media (max-width: 500px) {
+    .card-main {
+      -webkit-column-count: 1;
+      /* Chrome, Safari, Opera */
+      -moz-column-count: 1;
+      /* Firefox */
+      column-count: 1;
+  
+    }
+  
+    #github-projects, #white-papers {
+      .panel-body {
+        -webkit-column-count: 1;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 1;
+        /* Firefox */
+        column-count: 1;
+    
+      }
+    }
+  }
