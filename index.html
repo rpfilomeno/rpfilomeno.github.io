@@ -4,7 +4,7 @@ title: Home
 ---
 
 <div class="blurb">
-	<img class="home-photo" src="images/roger-circle.png">
+	<img class="home-photo" src="images/roger-circle.png" alt="profile">
 	<div class="home-profile">
 		<h1>Hi there!</h1>
 		<p>I'm Roger Filomeno. I'm a Research and Development Specialist from Philippines.
@@ -277,7 +277,7 @@ title: Home
 					</div>
 					{% else %}
 					<div class="card-top-image"
-						style="background-image: url('{{ "/images/thumb/th_lorem.png" | prepend: site.baseurl }}');">
+						style="background-image: url('/images/thumb/th_lorem.png');">
 						<h3 class="card-title card-title-shadow">
 							<a class="card-link" href="{{ post.url }}">{{ post.title }}</a>
 						</h3>
@@ -301,6 +301,7 @@ title: Home
 </div>
 
 <div id="fb-root"></div>
+
 <script>
 	(function (d, s, id) {
 		var js, fjs = d.getElementsByTagName(s)[0];
@@ -338,4 +339,4 @@ title: Home
 			</div>
 		</div>
 	</div>
-	</div>
+</div>
