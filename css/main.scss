@@ -43,6 +43,7 @@ $on-laptop:        800px;
     }
 }
 
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -51,7 +52,12 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting",
         "home",
-        "card",
         "about",
-        "share"
+        "share",
+        "gallery",
+        "timeline",
+        "custom",
+        "custom-mobile"
 ;
+
+@import "../node_modules/bootstrap-3-card/sass/card";

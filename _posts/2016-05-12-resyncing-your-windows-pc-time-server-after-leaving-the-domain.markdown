@@ -1,13 +1,20 @@
 ---
 layout: post
 title:  "Resyncing Your Windows PC Time Server After Leaving The Domain"
-date:   2016-05-12 19:42:01 +0800
+thumbnail: "/images/thumb/th_lorem.png"
+image: "/images/lorem.png"
+author: "rpfilomeno"
 categories: windows
 comments: true
+tags:
+ - troubleshooting
 ---
 
-Today I tried to upload my certificate to AWS IAM via command line:
+Today I tried to upload my certificate to AWS IAM. 
 
+<!--break-->
+
+Command line:
 
 ```
 C:\SSL>aws iam upload-server-certificate 

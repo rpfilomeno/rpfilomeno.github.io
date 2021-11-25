@@ -1,10 +1,18 @@
 ---
 layout: post
 title:  "Testing Kamailio load balancer with SIPp"
-date:   2016-04-11 16:05:54 +0800
+thumbnail: "/images/thumb/th_text-diagram.png"
+image: "/images/lorem.png"
+author: "rpfilomeno"
 categories: voip
 comments: true
+tags:
+ - troubleshooting
 ---
+
+Here are thr steps to test Kamailio under load.
+
+<!--break-->
 
 First of all lets describe our network setup:
 <script src="https://gist.github.com/rpfilomeno/d46493eefaf70d6838c157305ab9778a.js"></script>

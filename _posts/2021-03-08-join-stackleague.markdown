@@ -1,14 +1,19 @@
 ---
 layout: post
 title:  "Join Stackleague"
-date:   2021-03-08 01:44:54 +0800
+thumbnail: "/images/stackleague.jpg"
+image: "/images/stackleague.jpg"
+author: "rpfilomeno"
 categories: competition
 comments: true
+tags:
+ - developer
+ - prize
 ---
 
-![Stackleague](/images/stackleague.jpg)
-
 There's a new local all year round competition for developers launching this March at https://stackleague.com
+
+<!--break-->
 
 The price pool is 200,000 pesos (Php) as the time of this post.
 

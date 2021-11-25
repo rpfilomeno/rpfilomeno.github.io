@@ -1,14 +1,22 @@
 ---
 layout: post
 title:  "Monitoring Kamailio and Asterisk with AWS CloudWatch"
-date:   2016-05-07 05:50:54 +0800
+thumbnail: "/images/thumb/th_voip-aws-mon.jpg"
+image: "/images/voip-aws-mon.jpg"
+author: "rpfilomeno"
 categories: aws
 comments: true
+tags:
+ - voip
+ - asterisk
+ - kamailio
 ---
 
-Today I'm announcing the release to my new project <a href="https://github.com/rpfilomeno/voip-mon-aws-cloudwatch">VOIP Statistics to AWS CloudWatch (voip-mon-aws-cloudwatch)</a>, it is a monitoring script for Kamailio and Asterisk for AWS CloudWatch written in PHP. This works similarly to AWS CloudWatch Monitoring Script (Linux).
+Today I'm announcing the release to my new project <a href="https://github.com/rpfilomeno/voip-mon-aws-cloudwatch">VOIP Statistics to AWS CloudWatch (voip-mon-aws-cloudwatch)</a>, it is a monitoring script for Kamailio and Asterisk for AWS CloudWatch written in PHP. 
 
-<img src="/images/voip-aws-mon.jpg">
+<!--break-->
+
+This works similarly to AWS CloudWatch Monitoring Script (Linux).
 
 Requirements
 ------------

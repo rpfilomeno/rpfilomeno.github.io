@@ -1,0 +1,65 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Serve",
+            "type": "shell",
+            "command": "jekyll serve --host=0.0.0.0 --watch --incremental --force_polling",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "isBackground": true
+        },
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "jekyll build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Make /gallery Thumbnails",
+            "type": "shell",
+            "command": "xargs -n 1 -I{} convert ./gallery/photo/{} -resize 279x gallery/photo/279px/th_{} < <(find ./gallery/photo/ -maxdepth 1 -type f -name '*.*' -print | cut -d/ -f4-)",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Make /images Thumbnails",
+            "type": "shell",
+            "command": "xargs -n 1 -I{} convert ./images/{} -resize 279x images/thumb/th_{} < <(find ./images/ -maxdepth 1 -type f -name '*.*' -print | cut -d/ -f3-)",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Create New Post",
+            "type": "shell",
+            "command": "thor jekyll:new ${input:posttitle}",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "posttitle",
+            "description": "Post Title",
+            "default": "Your new post title",
+            "type": "promptString"
+        },
+    ]
+}
