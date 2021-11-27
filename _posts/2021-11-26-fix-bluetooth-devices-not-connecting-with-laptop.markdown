@@ -2,10 +2,10 @@
 layout: post
 title:  "Fix Bluetooth Not Connecting with Laptop"
 categories: windows
-thumbnail: "/images/thumb/th_lorem.png"
-image: "/images/lorem.png"
+thumbnail: "/images/thumb/th_bluetooth-chip.png"
+image: "/images/bluetooth-chip.png"
 author: "rpfilomeno"
-comments: true
+comments: true  
 tags:
  - bluetooth
  - windows
@@ -21,4 +21,4 @@ The Broadcom BCM20702A0 driver is required for some bluetooth devices and the pr
 
 Download the driver below and install as administrator.
 
-https://drive.google.com/file/d/1kegR3i8VVdJ9THgoWikoneqoTa1E2Lgk/view?usp=drivesdk
+<a href="https://drive.google.com/file/d/1kegR3i8VVdJ9THgoWikoneqoTa1E2Lgk/view?usp=drivesdk">https://drive.google.com/file/d/1kegR3i8VVdJ9THgoWikoneqoTa1E2Lgk/view?usp=drivesdk</a>

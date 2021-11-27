@@ -1,0 +1,23 @@
+{
+    "list": [
+        {
+          "name": "Visual Studio Code",
+          "description": "is more than just a code editor, it provides the tools and extensions to compile, debug, compare, refactor, and even manage code repositories all within a highly-customised development environment. Visual Studio Code is a proprietary distribution of the open source Small Code - OSS (vscode) iconCode - OSS (vscode) project.",
+          "link": "https://alternativeto.net/software/visual-studio-code/",
+          "tags": ["windows", "development"]
+        },
+        {
+          "name": "Bulk Crap Uninstaller (in short BCUninstaller or BCU)",
+          "description":"is a free (as in speech and beer) bulk program uninstaller with advanced automation. It excels at removing large amounts of applications with minimal to no user input, while requiring next to no technical knowledge.",
+          "link": "https://alternativeto.net/software/bulk-crap-uninstaller/",
+          "tags":["windows", "repair", "cleanup"]
+
+        },
+        {
+          "name": "Little Registry Cleaner",
+          "description": "is an open source program that is designed to cleanup the Microsoft Windows registry. It removes obsolete or unwanted items that build up in the registry over time in order to improve the stability and performance of your computer.",
+          "link": "https://alternativeto.net/software/little-registry-cleaner/",
+          "tags": ["windows", "repair", "cleanup"]
+        }
+    ]
+}

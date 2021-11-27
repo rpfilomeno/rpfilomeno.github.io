@@ -1,0 +1,54 @@
+---
+layout: default
+title: List
+hidelink: 
+permalink: /lists/desktop/
+---
+<header class="post-header">
+    <h1 class="post-title">List of Apps I'm Using</h1>
+</header>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<ul id="mylist" class="list-group">
+    <!--load from json -->
+</ul>
+
+<script>
+    function myFunction() {
+        // Declare variables
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("mylist");
+        li = ul.getElementsByTagName('li');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+
+    $(document).ready(function() {
+        $.getJSON('data.json', function(data) {     
+            
+            $.each(data.list, function(key, value) {
+                var tags = "";
+                for (let i = 0; i < value.tags.length; ++i) {
+                    tags += '<small class="text-muted">#' + value.tags[i] + '</small> ';
+                }
+                $("#mylist").append('<li class="list-group-item"><a href="' + value.link + '" target="_blank">' + value.name + '</a> » ' + value.description + ' ' + tags + '</li>');
+
+
+            });
+            
+        });
+    });
+</script>
+

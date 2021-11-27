@@ -1,0 +1,95 @@
+---
+layout: page
+title: Lists
+hidelink: true
+---
+
+
+<div class="clearfix"></div>
+
+<div id="mylists" class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Personal Collection</h3>
+    </div>
+    <div class="panel-body">
+
+
+
+        <div class="card-container">
+            <div class="card blog-card">
+                <div class="card-top-image" style="background: rgb(236, 227, 145);">
+                    <h3 class="card-title card-title-shadow">
+                        <a class="card-link" href="/lists/desktop/">Desktop Apps</a>
+                    </h3>
+                    <div class="card-block">
+                        <p class="card-text">Games, IDEs, graphics editors and many more installed in my PC .
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card blog-card">
+                <div class="card-top-image" style="background: rgb(185, 243, 193);">
+                    <h3 class="card-title card-title-shadow">
+                        <a class="card-link" href="#">Android Apps</a>
+                    </h3>
+                    <div class="card-block">
+                        <p class="card-text">Apps installed in my mobile phone and tablet.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card blog-card">
+                <div class="card-top-image" style="background: rgb(158, 145, 236);">
+                    <h3 class="card-title card-title-shadow">
+                        <a class="card-link" href="#">Hosted Apps</a>
+                    </h3>
+                    <div class="card-block">
+                        <p class="card-text">Server type applications that I used.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card blog-card">
+                <div class="card-top-image" style="background: rgb(236, 145, 183);">
+                    <h3 class="card-title card-title-shadow">
+                        <a class="card-link" href="#">Bookmarks</a>
+                    </h3>
+                    <div class="card-block">
+                        <p class="card-text">Collection of useful websites you can use such as generators, formaters,
+                            downloads and guides.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName('li');
+    
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>

@@ -14,10 +14,10 @@ layout: default
         
         {% for category in categories %}
         <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-        {% unless forloop.last %}&nbsp;{% endunless %}
+        &#10097;&nbsp;
         {% endfor %}
     
-        {% if categories %}&#10097;&nbsp;{% endif %}
+
       </div>
     
       {{ page.title }}
