@@ -3,21 +3,87 @@
         {
           "name": "Visual Studio Code",
           "description": "is more than just a code editor, it provides the tools and extensions to compile, debug, compare, refactor, and even manage code repositories all within a highly-customised development environment. Visual Studio Code is a proprietary distribution of the open source Small Code - OSS (vscode) iconCode - OSS (vscode) project.",
-          "link": "https://alternativeto.net/software/visual-studio-code/",
+          "link": "https://alternativeto.net/software/visual-studio-code/about/",
           "tags": ["windows", "development"]
         },
         {
           "name": "Bulk Crap Uninstaller (in short BCUninstaller or BCU)",
           "description":"is a free (as in speech and beer) bulk program uninstaller with advanced automation. It excels at removing large amounts of applications with minimal to no user input, while requiring next to no technical knowledge.",
-          "link": "https://alternativeto.net/software/bulk-crap-uninstaller/",
+          "link": "https://alternativeto.net/software/bulk-crap-uninstaller/about/",
           "tags":["windows", "repair", "cleanup"]
 
         },
         {
           "name": "Little Registry Cleaner",
           "description": "is an open source program that is designed to cleanup the Microsoft Windows registry. It removes obsolete or unwanted items that build up in the registry over time in order to improve the stability and performance of your computer.",
-          "link": "https://alternativeto.net/software/little-registry-cleaner/",
+          "link": "https://alternativeto.net/software/little-registry-cleaner/about/",
           "tags": ["windows", "repair", "cleanup"]
+        },
+        {
+          "name": "Krita",
+          "description": "is a complete creative sketching and painting application with advanced, commercial quality features. It's open-source and available across all major desktop platforms. Krita is free on the official website and paid on Steam and Microsoft Store: the money will support Krita development.",
+          "link": "https://alternativeto.net/software/krita/about/",
+          "tags": ["windows", "image", "editor"]
+        },
+        {
+          "name": "DBeaver",
+          "description": "is a universal Database Manager and SQL Client. DBeaver is free and open source (GPL) universal database tool for developers and database administrator.",
+          "link": "hhttps://alternativeto.net/software/dbeaver/about/",
+          "tags": ["windows", "development", "database"]
+        },
+        {
+          "name": "S3 Browser",
+          "description": "is a Windows client for Amazon S3. User Interface for Amazon S3. Allows you to manage your Amazon S3 Buckets and files with ease.",
+          "link": "https://alternativeto.net/software/s3-browser/about/",
+          "tags": ["windows", "development", "aws","s3"]
+        },
+        {
+          "name": "Pritunl Client",
+          "description": "is a simple OpenVPN Client and GUI. Additional integration available when connecting to a Pritunl server.",
+          "link": "https://alternativeto.net/software/pritunl-client/about/",
+          "tags": ["windows", "development", "vpn","client"]
+        },
+        {
+          "name": "Format Factory",
+          "description": "is a Format Factory is a multifunctional media converter and DVD ripper.",
+          "link": "https://alternativeto.net/software/formatfactory/about/",
+          "tags": ["windows", "video", "converter"]
+        },
+        {
+          "name": "LMMS",
+          "description": "is a free cross-platform alternative to commercial programs like Small FL Studio iconFL Studio , which allow you to produce music with your computer. This includes the creation of melodies and beats, the synthesis and mixing of sounds, and arranging of samples. You can have fun with your MIDI-keyboard and much more; all in a user-friendly and modern interface.",
+          "link": "https://alternativeto.net/software/lmms/about/",
+          "tags": ["windows", "music", "chipsong","generator"]
+        },
+        {
+          "name": "Talend",
+          "description": "leverages the open source model to make data integration available to all types of organizations, regardless of their size, level of expertise or budgetary constraints. Talend’s solutions connect to all source and target systems and they can be downloaded at no cost. Talend also offers data quality solutions, fully complementary to its data integration solutions.",
+          "link": "https://alternativeto.net/software/talend/about/",
+          "tags": ["windows", "development", "etl","data","transformer"]
+        },
+        {
+          "name": "Adobe Photoshop CS6 Portable",
+          "description": "is most powerful & Adobe’s flagship image editing windows Application with amazing new features, like vector layers, Content Aware Patch/Move tool, Adaptive Wide Angle filter, Crop tool, and so much more.",
+          "link": "https://www.apsportable.com/photoshop-cs6-portable-download-4/",
+          "tags": ["windows", "photo", "editor","portable"]
+        },
+        {
+          "name": "Sublime Text",
+          "description": "is a sophisticated text editor for code, html and prose - any kind of text file. You'll love the slick user interface and extraordinary features.",
+          "link": "https://alternativeto.net/software/sublime-text/about/",
+          "tags": ["windows", "text", "editor"]
+        },
+        {
+          "name": "OWASP Zed Attack Proxy (ZAP)",
+          "description": "is an easy to use integrated penetration testing tool for finding vulnerabilities in web applications. It is designed to be used by people with a wide range of security experience and as such is ideal for developers and functional testers who are new to penetration testing",
+          "link": "https://alternativeto.net/software/zed-attack-proxy/about/",
+          "tags": ["windows", "development", "hacking","pentesting","proxy"]
+        },
+        {
+          "name": "Cryptomator",
+          "description": "provides transparent, client-side encryption for your cloud. Protect your documents from unauthorized access. Cryptomator on the desktop is free and open source software, so you can rest assured there are no backdoors. Cryptomator for Android/iOS costs a small fee and is not open source, but it uses an open-core component that can be checked for backdoors.",
+          "link": "https://alternativeto.net/software/cryptomator/about/",
+          "tags": ["windows", "storage", "encyption"]
         }
     ]
 }
