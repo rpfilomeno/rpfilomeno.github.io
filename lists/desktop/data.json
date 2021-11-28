@@ -84,6 +84,276 @@
           "description": "provides transparent, client-side encryption for your cloud. Protect your documents from unauthorized access. Cryptomator on the desktop is free and open source software, so you can rest assured there are no backdoors. Cryptomator for Android/iOS costs a small fee and is not open source, but it uses an open-core component that can be checked for backdoors.",
           "link": "https://alternativeto.net/software/cryptomator/about/",
           "tags": ["windows", "storage", "encyption"]
+        },
+        {
+          "name": "OpenSCAP",
+          "description": "is a line of standards managed by NIST. It was created to provide a standardized approach to maintaining the security of enterprise systems, such as automatically verifying the presence of patches, checking system security configuration settings, and examining systems for signs of compromise.",
+          "link": "https://alternativeto.net/software/openscap/about/",
+          "tags": ["windows", "scan", "pentesting"]
+        },
+        {
+          "name": "Lofi ",
+          "description": "is compact, taking up only 150² pixels of screen real-estate and it's resizable! You always know what's playing, but it's never in your way.",
+          "link": "https://www.lofi.rocks/",
+          "tags": ["windows", "toys", "spotify"]
+        },
+        {
+          "name": "EZBlocker ",
+          "description": "is an beautifully simple ad blocker for Small Spotify iconSpotify that automatically mutes commercials.",
+          "link": "https://alternativeto.net/software/ezblocker/about/",
+          "tags": ["windows", "ad-blocker", "anti-feature"]
+        },
+        {
+          "name": "Mockoon ",
+          "description": "is the easiest and quickest way to run mock APIs locally. No remote deployment, no account required, open source.",
+          "link": "https://alternativeto.net/software/mockoon/about/",
+          "tags": ["windows", "development", "mockup", "testing"]
+        },
+        {
+          "name": "diagrams.net",
+          "description": "is a free online diagram drawing application for workflow, BPM, org charts, UML, ER, network diagrams. No login or registration are required and features include the ability to save locally (including SVG), a range of stencils, .vsdx, Lucidchart and Gliffy import and real time diagram sharing.",
+          "link": "https://alternativeto.net/software/diagramly/about/",
+          "tags": ["windows", "development", "planning", "diagram"]
+        },
+        {
+          "name": "ScreenToGif",
+          "description": "allows you to record a selected area of your screen and save as a animated gif.",
+          "link": "https://alternativeto.net/software/screentogif/about/",
+          "tags": ["windows", "image", "editor", "recorder"]
+        },
+        {
+          "name": "Snappy Driver Installer Origin",
+          "description": " is a portable Windows tool to install and update device drivers. It can be used offline to install drivers where Internet isn't available. No more searching for drivers after a clean install, just let Snappy Driver Installer Origin do it's thing and your job will be done in no time. The perfect technician's tool.",
+          "link": "https://alternativeto.net/software/snappy-driver-installer-origin/about/",
+          "tags": ["windows", "installers", "driver", "updater"]
+        },
+        {
+          "name": "VRoid Studio",
+          "description": " is a a character maker that allows users to create, in easy steps, 3D model characters which can be used in various VR\AR platforms as well as the production 3DCG animation and games.",
+          "link": "https://alternativeto.net/software/vroid/about/",
+          "tags": ["windows", "3d", "model", "generator"]
+        },
+        {
+          "name": "VMagicMirror",
+          "description": "is application for VRM avatar on Windows desktop, to move your avatar without any special devices.",
+          "link": "https://malaybaku.github.io/VMagicMirror/en/index",
+          "tags": ["windows", "3d", "model", "animator","vtuber"]
+        },
+        {
+          "name": "VRM to Pmx Converter",
+          "description": "converts VRoid .vrp file to MikuMikuDance .pmx file.",
+          "link": "https://malaybaku.github.io/VMagicMirror/en/index",
+          "tags": ["windows", "3d", "model", "converter","vtuber"]
+        },
+        {
+          "name": "MikuMikuDance",
+          "description": "allows users to import 3D models into a virtual space that can be moved and animated accordingly. The positioning of the 3D figures can be easily altered, the facial expressions can be altered (as long as the model has morphs to use), and motion data can be applied to the model to make it move.",
+          "link": "https://alternativeto.net/software/mikumikudance/about/",
+          "tags": ["windows", "3d", "model", "animator","vtuber"]
+        },
+        {
+          "name": "Pmx Editor",
+          "description": "is a dance animation program originally created in Japanese; contains a 3D mesh for models, dancers, characters, and other accessories that can be texturized and animated with the MikuMikuDance tools; used for storing different dancer models.",
+          "link": "https://alternativeto.net/software/pmx-editor/about/",
+          "tags": ["windows", "3d", "model", "editor","vtuber"]
+        },
+        {
+          "name": "ZeroTier",
+          "description": "creates virtual ethernet networks that work everywhere. Use it as a VPN alternative, for gaming, or to create a virtual office LAN that travels with you.",
+          "link": "https://alternativeto.net/software/zerotier-one/about/",
+          "tags": ["windows", "vpn", "p2p", "network"]
+        },
+        {
+          "name": "Sysinternals Suite",
+          "description": "have been rolled up into a single Suite of tools. This file contains the individual troubleshooting tools and help files.",
+          "link": "https://alternativeto.net/software/sysinternals-suite/about/",
+          "tags": ["windows", "vpn", "p2p", "network"]
+        },
+        {
+          "name": "Insomnia REST Client",
+          "description": "is a simple yet powerful REST API Client with cookie management, environment variables, code generation, and authentication for Mac, Window, and Linux.",
+          "link": "https://alternativeto.net/software/insomnia-rest-client/about/",
+          "tags": ["windows", "development", "api", "testing"]
+        },
+        {
+          "name": "Windows Subsystem for Linux (WSL)",
+          "description": "is primarily a tool for developers -- especially web developers and those who work on or with open source projects. This allows those who want/need to use Bash, common Linux tools (sed, awk, etc.) and many Linux-first tools (Ruby, Python, etc.) to use their toolchain on Windows.",
+          "link": "https://alternativeto.net/software/windows-subsystem-for-linux-wsl-/about/",
+          "tags": ["windows", "development", "virtualization", "emulator"]
+        },
+        {
+          "name": "SmartGit",
+          "description": "is a front-end for the distributed version control system Git and runs on Windows, Mac OS X and Linux. SmartGit is intended for developers who prefer a graphical user interface over a command line client, to be even more productive with Git.",
+          "link": "https://alternativeto.net/software/smartgit/about/",
+          "tags": ["windows", "development", "git"]
+        },
+        {
+          "name": "Meld",
+          "description": "is a visual diff and merge tool. You can compare two or three files and edit them in place (diffs update dynamically). You can compare two or three folders and launch file comparisons. You can browse and view a working copy from popular version control systems such such as CVS, Subversion, Bazaar-ng and Mercurial. Written with Python and GTK.",
+          "link": "https://alternativeto.net/software/meld/about/",
+          "tags": ["windows", "development", "git"]
+        },
+        {
+          "name": "NetSpeedMonitor",
+          "description": "is a lightweight Network Monitoring Toolbar for your Windows Taskbar designed to be used on computers that run Windows XP, Windows Server 2003, Windows Vista, Windows 7 or Windows 10.",
+          "link": "https://alternativeto.net/software/netspeedmonitor/about/",
+          "tags": ["windows", "monitoring", "internet"]
+        },
+        {
+          "name": "OBS Studio",
+          "description": "is a screen-casting and live-streaming software available across multiple platforms including macOS, Windows and Linux.",
+          "link": "https://alternativeto.net/software/open-broadcaster-software/about/",
+          "tags": ["windows", "streaming", "internet"]
+        },
+        {
+          "name": "Wireshark",
+          "description": "is the world's foremost network protocol analyzer. It lets you capture and interactively browse the traffic running on a computer network. It is the de facto (and often de jure) standard across many industries and educational institutions.",
+          "link": "https://alternativeto.net/software/wireshark/about/",
+          "tags": ["windows", "networking", "capture"]
+        },
+        {
+          "name": "RegexBuddy",
+          "description": "is your perfect companion for working with regular expressions. Learning, creating, understanding, testing, using and saving regular expressions has never been easier.",
+          "link": "https://alternativeto.net/software/regexbuddy/about/",
+          "tags": ["windows", "development", "generator"]
+        },
+        {
+          "name": "Chocolatey",
+          "description": "is a Machine Package Manager, somewhat like apt-get, but built with Windows in mind. It is built on top of NuGet command line and the NuGet infrastructure. In terms of updates, it allows you to update nearly everything on your machine with a few simple keystrokes.",
+          "link": "https://alternativeto.net/software/chocolatey/about/",
+          "tags": ["windows", "installer", "package-manager"]
+        },
+        {
+          "name": "HandBrake",
+          "description": "is an open-source, multithreaded video transcoder – it compresses and converts digital media from one format to another. HandBrake can rip encrypted DVDs with libdvdcss (libdvdcss is installed with VLC media player on macOS, or AnyDVD/DVD 43 on Windows).",
+          "link": "https://alternativeto.net/software/handbrake/about/",
+          "tags": ["windows", "video", "transcoder"]
+        },
+        {
+          "name": "Windows Terminal",
+          "description": "is a new, modern, feature-rich, productive terminal application for command-line users. It includes many of the features most frequently requested by the Windows command-line community including support for tabs, rich text, globalization, configurability, theming & styling, and more.",
+          "link": "https://alternativeto.net/software/windows-terminal/about/",
+          "tags": ["windows", "administration", "terminal"]
+        },
+        {
+          "name": "Docker Desktop",
+          "description": "is the fastest way to containerize applications.",
+          "link": "https://www.docker.com/products/docker-desktop",
+          "tags": ["windows", "development", "virtualization"]
+        },
+        {
+          "name": "Kubernetes",
+          "description": "is an open source orchestration system for Small Docker iconDocker containers.",
+          "link": "https://alternativeto.net/software/kubernetes/about/",
+          "tags": ["windows", "administration", "virtualization"]
+        },
+        {
+          "name": "ArgoCD",
+          "description": "is a declarative GitOps tool built to deploy applications to Kubernetes.",
+          "link": "https://argoproj.github.io/cd/",
+          "tags": ["windows", "administration", "virtualization","ci-cd"]
+        },
+        {
+          "name": "GitHub CLI",
+          "description": "Create pull requests and issues without leaving the command line. See the status of open issues and pull requests, and see what’s waiting for review. Filter issues and pull requests, and open them in your browser.",
+          "link": "https://alternativeto.net/software/github-cli/about/",
+          "tags": ["windows", "development","ci-cd"]
+        },
+        {
+          "name": "aws-cli",
+          "description": "is a Universal Command Line Interface for Amazon Web Services.",
+          "link": "https://alternativeto.net/software/aws-cli/about/",
+          "tags": ["windows", "development","administration","ci-cd"]
+        },
+        {
+          "name": "SonarQube",
+          "description": "is an open source quality management platform, dedicated to continuously analyze and measure source code quality, from the portfolio to the method. Static code analysis is available in the Community Edition (free / open source) for: C#, CSS, Flex, Go, HTML, Java, JavaScript, Kotlin, PHP, Python, Ruby, Scala, TypeScript, VB.NET, XML.",
+          "link": "https://alternativeto.net/software/sonarqube/about/",
+          "tags": ["windows", "development","security","ci-cd"]
+        },
+        {
+          "name": "Android Studio",
+          "description": " is a new Android development environment based on Small IntelliJ IDEA iconIntelliJ IDEA. Similar to Small Eclipse iconEclipse with Small Android Development Tools for Eclipse iconAndroid Development Tools for Eclipse, Android Studio provides integrated Android developer tools for development and debugging.",
+          "link": "https://alternativeto.net/software/android-studio/about/",
+          "tags": ["windows", "development","android","ide"]
+        },
+        {
+          "name": "Godot Engine",
+          "description": "is a fully featured, open source, MIT licensed game engine. It focuses on having great tools, and a visual oriented workflow that can export to PC, Mobile and Web platforms.",
+          "link": "https://alternativeto.net/software/godot-engine/about/",
+          "tags": ["windows", "3d","game","engine","ide"]
+        },
+        {
+          "name": "Blender",
+          "description": "is the free open source 3D content creation suite, available for all major operating systems under the GNU General Public License.",
+          "link": "https://alternativeto.net/software/blender/about/",
+          "tags": ["windows", "3d","game","engine","ide"]
+        },
+        {
+          "name": "Discord",
+          "description": "makes it easy to talk every day and hang out more often. Best community chat.",
+          "link": "https://alternativeto.net/software/discord-app/about/",
+          "tags": ["windows", "chat","team","collabotation"]
+        },
+        {
+          "name": "Jupyter Notebook",
+          "description": "is a web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, machine learning and much more.",
+          "link": "https://alternativeto.net/software/jupyter/about/",
+          "tags": ["windows", "development","data-science","collabotation"]
+        },
+        {
+          "name": "RStudio",
+          "description": "is an integrated development environment (IDE) for R. RStudio combines an intuitive user interface with powerful coding tools to help you get the most out of R (language).",
+          "link": "https://alternativeto.net/software/rstudio/about/",
+          "tags": ["windows", "development","data-science","statistics"]
+        },
+        {
+          "name": "Jitsi",
+          "description": "is an audio/video and chat communicator with full encryption that supports protocols such as SIP, XMPP/Jabber, ICQ/AIM, Windows Live, Yahoo!, GTalk/Hangouts extensions, as well as OTR, ZRTP, etc.",
+          "link": "https://alternativeto.net/software/sip-communicator/about/",
+          "tags": ["windows", "team","voip"]
+        },
+        {
+          "name": "Zoiper",
+          "description": "is a VoIP soft client, meant to work with any IP-based communications systems and infrastructure.",
+          "link": "https://alternativeto.net/software/zoiper-classic/about/",
+          "tags": ["windows", "team","voip"]
+        },
+        {
+          "name": "BlueStacks",
+          "description": "runs Android OS and apps on Windows PCs with instant switch between Android and Windows - no reboot is required. End consumers can now enjoy their favorite Android apps on Windows PCs.",
+          "link": "https://alternativeto.net/software/bluestacks/about/",
+          "tags": ["windows", "android","emulator"]
+        },
+        {
+          "name": "Phoenix OS",
+          "description": "is a personal computer operating system which is further researched and developed based on the Android platform, mainly orients to smart tablet, laptop, desktop computer and other large-screen devices. [Warning: May contain spyware!]",
+          "link": "https://alternativeto.net/software/phoenix-os/about/",
+          "tags": ["windows", "android","emulator"]
+        },
+        {
+          "name": "GlassWire",
+          "description": "is a network security monitoring tool and analyzer that visualizes your network activity on an easy to use graph, alerts you of possible threats, manages your firewall, and more.",
+          "link": "https://alternativeto.net/software/glasswire/about/",
+          "tags": ["windows", "network","monitor"]
+        },
+        {
+          "name": "Glances",
+          "description": "is a cross-platform monitoring tool which aims to present a large amount of monitoring information through a curses or Web based interface. The information dynamically adapts depending on the size of the user interface.",
+          "link": "https://alternativeto.net/software/glasswire/about/",
+          "tags": ["windows", "network","monitor"]
+        },
+        {
+          "name": "7-Zip",
+          "description": "is a file archiver with a high compression ratio.",
+          "link": "https://alternativeto.net/software/glasswire/about/",
+          "tags": ["windows", "compression","archive"]
+        },
+        {
+          "name": "Ventoy",
+          "description": "is an open source tool to create bootable USB drive for ISO files. With ventoy, you don't need to format the disk again and again, you just need to copy the iso file to the USB drive and boot it.",
+          "link": "https://alternativeto.net/software/ventoy/about/",
+          "tags": ["windows", "multi-boot","archive"]
         }
     ]
 }
