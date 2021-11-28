@@ -354,6 +354,36 @@
           "description": "is an open source tool to create bootable USB drive for ISO files. With ventoy, you don't need to format the disk again and again, you just need to copy the iso file to the USB drive and boot it.",
           "link": "https://alternativeto.net/software/ventoy/about/",
           "tags": ["windows", "multi-boot","archive"]
+        },
+        {
+          "name": "LibreOffice",
+          "description": "is a free and open-source office suite that is compatible with other major office suites, and is available on all operating systems. It is an independently-developed version of the OpenOffice.org suite.",
+          "link": "https://alternativeto.net/software/libreoffice/about/",
+          "tags": ["windows", "office"]
+        },
+        {
+          "name": "Spotify",
+          "description": "is a freemium music streaming service providing digital rights management-restricted content from record labels including Sony, EMI, Warner Music Group and Universal.",
+          "link": "https://alternativeto.net/software/spotify/about/",
+          "tags": ["windows", "music"]
+        },
+        {
+          "name": "MPV",
+          "description": "is an audio and movie player based on Small MPlayer iconMPlayer and Small mplayer2 iconmplayer2. It supports a wide variety of video file formats, audio and video codecs, and subtitle types. It shares some features with the former projects while introducing many more.",
+          "link": "https://alternativeto.net/software/mpv/about/",
+          "tags": ["windows", "media","player"]
+        },
+        {
+          "name": "qBittorrent",
+          "description": "aims to provide a Free Software alternative to Small µTorrent iconµTorrent. Additionally, qBittorrent runs and provides the same features on all major platforms (Linux, Mac OS X, Windows, OS/2, FreeBSD).",
+          "link": "https://alternativeto.net/software/qbittorrent/about/",
+          "tags": ["windows", "torrent"]
+        },
+        {
+          "name": "Malwarebytes Anti-Malware",
+          "description": "is considered to be the next step in the detection and removal of malware. In our product we have compiled a number of new technologies that are designed to quickly detect, destroy, and prevent malware.",
+          "link": "https://alternativeto.net/software/malwarebytes-anti-malware/about/",
+          "tags": ["windows", "antivirus"]
         }
     ]
 }
