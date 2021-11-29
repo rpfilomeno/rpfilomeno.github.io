@@ -13,7 +13,7 @@ tags:
  - iac
 ---
 
-We all know about Terraform, the leading Infrastructure as Code platform, however what will you do if you already built the infrastructure? How will you still be able to leverage Terraform without needing to rewrite hundreds of definitions from scratch. As of this time in writing there is no existing way to import all resources at once using Terraform: 
+We all know about Terraform, the leading Infrastructure as Code platform, however what will you do if you already built the infrastructure? How will you still be able to leverage Terraform without needing to rewrite hundreds of definitions from scratch.<!--break--> As of this time in writing there is no existing way to import all resources at once using Terraform: 
 
 > The terraform import command is used to import existing infrastructure.
 >
