@@ -22,11 +22,14 @@ First we need to make sure to follow some key naming convention that the keys mu
 Example SSM Parameter entry:
 
 <table class="table table-dark">
- <tr>
-  <th scope="col">path</th>
-  <th scope="col">value</th>
-  <th scope="col">securestring(?)</th>
- </tr>
+ <thead>
+  <tr>
+   <th scope="col">path</th>
+   <th scope="col">value</th>
+   <th scope="col">securestring(?)</th>
+  </tr>
+ </thead>
+ <tbody>
  <tr>
   <td>/root/dbconfigs/DBhost</td><td>192.168.0.1</td><td>no</td>
  </tr>
@@ -36,6 +39,8 @@ Example SSM Parameter entry:
  <tr>
   <td>/root/dbconfigs/DBpassword</td><td>***********</td><td>yes</td>
  </tr>
+ </tbody>
+</table>
 
 
 This will be written to an Apache config as:
