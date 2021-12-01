@@ -21,9 +21,11 @@ First we need to make sure to follow some key naming convention that the keys mu
 
 Example SSM Parameter entry:
 
-<table>
+<table class="table table-dark">
  <tr>
-  <th>path</th><th>value</th><th>securestring(?)</th>
+  <th scope="col">path</th>
+  <th scope="col">value</th>
+  <th scope="col">securestring(?)</th>
  </tr>
  <tr>
   <td>/root/dbconfigs/DBhost</td><td>192.168.0.1</td><td>no</td>
