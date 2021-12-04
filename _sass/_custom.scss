@@ -1,3 +1,19 @@
+.blurb {
+  background-color: $background-color;
+    border-radius: 5px;
+    padding: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+
+.page-content .wrapper {
+  background-color: $background-color;
+  border-radius: 5px;
+  margin-top: 50px;
+  padding-top: 20px;
+}
+
 .card-main {
   -webkit-column-count: 2;
   /* Chrome, Safari, Opera */
