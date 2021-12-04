@@ -31,7 +31,7 @@ permalink: /gallery/
                                     aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                             <dv class="asset-holder">
                                 <img src="{{ "/images/loading-cat.gif" | prepend: site.baseurl }}" class="imagepreview"
-                                style="width: 100%;" alt="loading">
+                                    style="width: 100%;" alt="loading">
                             </dv>
                         </div>
                         <div class="modal-footer">
@@ -48,32 +48,49 @@ permalink: /gallery/
                     <hr>
                     <div class="gal">
                         <a href="#" class="pop"><img
-                                src="{{ "/gallery/photo/279px/th_amongus-sus.jpg" | prepend: site.baseurl }}" alt="Among Us version of #tumindig avatar."
+                                src="{{ "/gallery/photo/279px/th_amongus-sus.jpg" | prepend: site.baseurl }}"
+                                alt="Among Us version of #tumindig avatar."
                                 data-src="{{ "/gallery/photo/amongus-sus.jpg" | prepend: site.baseurl }}"></a>
                         <a href="#" class="pop"><img
-                                src="{{ "/gallery/photo/279px/th_candies.jpg" | prepend: site.baseurl }}" alt="Chocolate wrappings during Valentines at a street market."
+                                src="{{ "/gallery/photo/279px/th_candies.jpg" | prepend: site.baseurl }}"
+                                alt="Chocolate wrappings during Valentines at a street market."
                                 data-src="{{ "/gallery/photo/candies.jpg" | prepend: site.baseurl }}"></a>
                         <a href="#" class="pop"><img
-                                    src="{{ "/gallery/photo/279px/th_maki.jpg" | prepend: site.baseurl }}" alt="Macro shot of a California Maki sushi."
-                                    data-src="{{ "/gallery/photo/maki.jpg" | prepend: site.baseurl }}"></a>
+                                src="{{ "/gallery/photo/279px/th_maki.jpg" | prepend: site.baseurl }}"
+                                alt="Macro shot of a California Maki sushi."
+                                data-src="{{ "/gallery/photo/maki.jpg" | prepend: site.baseurl }}"></a>
                         <a href="#" class="pop"><img
-                                src="{{ "/gallery/photo/279px/th_wannabe-frames.gif" | prepend: site.baseurl }}" alt="Editing 3D Model of an avatar used by vTuber."
+                                src="{{ "/gallery/photo/279px/th_wannabe-frames.gif" | prepend: site.baseurl }}"
+                                alt="Editing 3D Model of an avatar used by vTuber."
                                 data-src="{{ "/gallery/photo/wannabe-frames.gif" | prepend: site.baseurl }}"></a>
                         <a href="#" class="pop"><img
-                                src="{{ "/gallery/photo/279px/th_anon-tindig.png" | prepend: site.baseurl }}" alt="Anonymous version of #tumindig avatar."
+                                src="{{ "/gallery/photo/279px/th_anon-tindig.png" | prepend: site.baseurl }}"
+                                alt="Anonymous version of #tumindig avatar."
                                 data-src="{{ "/gallery/photo/anon-tindig.png" | prepend: site.baseurl }}"></a>
                         <a href="#" class="pop"><img
-                                src="{{ "/gallery/photo/279px/th_it-logo.jpeg" | prepend: site.baseurl }}" alt="Logo for Philippine IT Specialist group on Clubhouse."
+                                src="{{ "/gallery/photo/279px/th_it-logo.jpeg" | prepend: site.baseurl }}"
+                                alt="Logo for Philippine IT Specialist group on Clubhouse."
                                 data-src="{{ "/gallery/photo/it-logo.jpeg" | prepend: site.baseurl }}"></a>
                         <a href="#" class="pop"><img
-                                src="{{ "/gallery/photo/279px/th_travel.jpg" | prepend: site.baseurl }}" alt="Logo for a Facebook page."
+                                src="{{ "/gallery/photo/279px/th_travel.jpg" | prepend: site.baseurl }}"
+                                alt="Logo for a Facebook page."
                                 data-src="{{ "/gallery/photo/travel.jpg" | prepend: site.baseurl }}"></a>
                         <a href="#" class="pop"><img
-                                src="{{ "/gallery/photo/279px/th_wannabe-globe.gif" | prepend: site.baseurl }}" alt="Full 3D moder render with cartoonish light effects. "
+                                src="{{ "/gallery/photo/279px/th_wannabe-globe.gif" | prepend: site.baseurl }}"
+                                alt="Full 3D moder render with cartoonish light effects. "
                                 data-src="{{ "/gallery/photo/wannabe-globe.gif" | prepend: site.baseurl }}"></a>
                         <a href="#" class="pop"><img
-                                src="{{ "/gallery/photo/279px/th_wannabe-mmd.webp" | prepend: site.baseurl }}" alt="Loading 3D Model into MMD and rendering motion capture sequences for a dance track."
+                                src="{{ "/gallery/photo/279px/th_wannabe-mmd.webp" | prepend: site.baseurl }}"
+                                alt="Loading 3D Model into MMD and rendering motion capture sequences for a dance track."
                                 data-src="embed/tHhzE2hfXfU"></a>
+                        <a href="#" class="pop"><img
+                                src="{{ "/gallery/photo/279px/th_shop-talk.jpg" | prepend: site.baseurl }}"
+                                alt="Appeared as a TV guest on ANC to talk about Mobile Marketing."
+                                data-src="embed/j5-02lX_g1Y"></a>
+                        <a href="#" class="pop"><img
+                                src="{{ "/gallery/photo/279px/th_drupal-widget.jpg" | prepend: site.baseurl }}"
+                                alt="Mentoring for Google's Summer of Code under Drupal project."
+                                data-src="embed/DqQKB5PCGds"></a>
 
                     </div>
                 </div>
@@ -114,26 +131,29 @@ permalink: /gallery/
             $('#imagemodal').find('.modal-footer p').text(description);
 
             if (/^embed\//.test(imgsrc)) {
-                embedcode = '<div class="embed-container"><iframe id="video" width="100%" height="auto" src="//www.youtube.com/'+imgsrc+'?rel=0" frameborder="0" allowfullscreen></iframe></div>';
-                    $('#imagemodal').find('.asset-holder').html(embedcode);
-                    $('#imagemodal').modal('show');
+                embedcode =
+                    '<div class="embed-container"><iframe id="video" width="100%" height="auto" src="//www.youtube.com/' +
+                    imgsrc + '?rel=0" frameborder="0" allowfullscreen></iframe></div>';
+                $('#imagemodal').find('.asset-holder').html(embedcode);
+                $('#imagemodal').modal('show');
 
 
             } else {
-                embedcode = '<img src="{{ "/images/loading-cat.gif" | prepend: site.baseurl }}" class="imagepreview" style="width: 100%;" alt="loading">';
+                embedcode =
+                    '<img src="{{ "/images/loading-cat.gif" | prepend: site.baseurl }}" class="imagepreview" style="width: 100%;" alt="loading">';
                 $('#imagemodal').find('.asset-holder').html(embedcode);
 
                 $('#imagemodal').modal('show');
 
- 
+
                 PreloadImage(imgsrc, function () {
                     $('.imagepreview').attr('src', imgsrc);
-                    
+
                 });
 
             }
 
-            
+
 
         });
     });
