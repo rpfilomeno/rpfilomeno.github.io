@@ -7,10 +7,7 @@
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
-    position: fixed;
-    background-color: $background-color;
-    width: 100%;
-    z-index: 9999;
+    position: relative;
 }
 
 .site-title {
@@ -172,10 +169,6 @@
  */
 .page-content {
     padding: $spacing-unit 0;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-    background-image: url("/images/transistor-city.jpg");
 }
 
 .page-heading {
