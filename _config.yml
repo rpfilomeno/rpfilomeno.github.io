@@ -10,7 +10,7 @@ title: Gits, Gist and Musings
 email: rpfilomeno@gmail.com
 description: "Know more about Roger Filomeno. My work, my thoughts, my rants."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://rpfilomeno.github.io" # the base hostname & protocol for your site
+url: "https://rpfilomeno.me" # the base hostname & protocol for your site
 twitter_username: godie
 github_username:  rpfilomeno
 permalink: /:categories/:title/
@@ -29,6 +29,8 @@ exclude:
 - serve.cmd
 - build.cmd
 - node_modules
+- WslPortForward.ps1
+- jekyll.thor
 
 # Build settings
 markdown: kramdown
