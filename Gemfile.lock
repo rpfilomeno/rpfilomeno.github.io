@@ -19,7 +19,7 @@ GEM
     thor (1.1.0)
 
 PLATFORMS
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
   jekyll-watch
@@ -28,4 +28,4 @@ DEPENDENCIES
   thor
 
 BUNDLED WITH
-   2.2.31
+   2.1.2
