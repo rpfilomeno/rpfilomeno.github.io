@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Character modelling in 3D made easy with VRoid"
-categories: personal
+categories: 3d
 thumbnail: "/images/thumb/th_vroid-tps.png"
 image: "/images/vroid-tps.png"
 author: "rpfilomeno"
