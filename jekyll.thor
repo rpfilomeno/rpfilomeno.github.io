@@ -20,7 +20,7 @@ class Jekyll < Thor
       post.puts "---"
       post.puts "layout: post"
       post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
-      post.puts "categories: personal;"
+      post.puts "categories: personal"
       post.puts "thumbnail: \"/images/thumb/th_lorem.png\""
       post.puts "image: \"/images/lorem.png\""
       post.puts "author: \"rpfilomeno\""
