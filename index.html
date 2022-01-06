@@ -27,102 +27,31 @@ title: Home
 	</div>
 	<div class="panel-body">
 
-		<h4>PHP: Hypertext Preprocessor</h4>
-		<div class="progress active">
-			<div class="progress-bar progress-bar-danger progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-				aria-valuemax="100" style="width: 0%">
-				<span class="sr-only">Expert</span>
-			</div>
-		</div>
+		<script src="https://unpkg.com/@codersrank/summary@0.9.11/codersrank-summary.min.js"></script>
+		<codersrank-summary username="rpfilomeno" show-avatar="false" show-header="false"></codersrank-summary>
 
-
-		<h4>Cloud Computing: AWS, ELK, K8s, Serverless and Terraform</h4>
-		<div class="progress active">
-			<div class="progress-bar progress-bar-danger progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-				aria-valuemax="100" style="width: 0%">
-				<span class="sr-only">Expert</span>
-			</div>
-		</div>
-
-
-		<h4>HTML, JavaScript/Node and CSS</h4>
-		<div class="progress active">
-			<div class="progress-bar progress-bar-danger progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-				aria-valuemax="100" style="width: 0%">
-				<span class="sr-only">Expert</span>
-			</div>
-		</div>
-
-
-		<h4>PCI-DSS Compliance</h4>
-		<div class="progress active">
-			<div class="progress-bar progress-bar-warning progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-				aria-valuemax="100" style="width: 0%">
-				<span class="sr-only">Master</span>
-			</div>
-		</div>
-
-		<h4>Visual Basic, C# .Net Framework</h4>
-		<div class="progress active">
-			<div class="progress-bar progress-bar-warning progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-				aria-valuemax="100" style="width: 0%">
-				<span class="sr-only">Master</span>
-			</div>
-		</div>
-
-		<h4>Java</h4>
-		<div class="progress active">
-			<div class="progress-bar progress-bar-warning progress-bar-animated" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-				aria-valuemax="100" style="width: 0%">
-				<span class="sr-only">Master</span>
-			</div>
-		</div>
-
-		<h4>Python</h4>
-		<div class="progress active">
-			<div class="progress-bar progress-bar-success progress-bar-animated" role="progressbar" aria-valuenow="40" aria-valuemin="0"
-				aria-valuemax="100" style="width: 0%">
-				<span class="sr-only">Intermediate</span>
-			</div>
-		</div>
-
-		<h4>Assembly</h4>
-		<div class="progress active">
-			<div class="progress-bar progress-bar-info progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0"
-				aria-valuemax="100" style="width: 0%">
-				<span class="sr-only">Beginner</span>
-			</div>
-		</div>
-
-		<h4>Ruby</h4>
-		<div class="progress active">
-			<div class="progress-bar progress-bar-info progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0"
-				aria-valuemax="100" style="width: 0%">
-				<span class="sr-only">Beginner</span>
-			</div>
-		</div>
+		<script src="https://unpkg.com/@codersrank/skills-chart@0.9.11/codersrank-skills-chart.min.js"></script>
+		<codersrank-skills-chart username="rpfilomeno" labels="true" legend="true" tooltip="true"></codersrank-skills-chart>
 		
-		<script>
-			$(function() {
-			    $('.progress .progress-bar').css("width",function() {
-				return $(this).attr("aria-valuenow") + "%";
-			    })
-			});
-		</script>	
-		
-
-
-		<h4>Other Stack</h4>
-		<span class="label label-default">Perl</span>
-		<span class="label label-default">Bash</span>
-		<span class="label label-default">Flash, Actionscript, Flex</span>
-		<span class="label label-default">C++</span>
-		<span class="label label-default">Go</span>
-		<span class="label label-default">Lisp</span>
-		<span class="label label-default">Prolog</span>
-		<span class="label label-default">VBScript</span>
-		<span class="label label-default">AutoIt</span>
-		<span class="label label-default">Pascal</span>
+		<hr>
+		<p>
+			<h5>Other Stacks:</h5>
+			<span class="label label-info">Amazon Web Services</span>
+			<span class="label label-info">Serverless</span>
+			<span class="label label-info">Kubernetes</span>
+			<span class="label label-info">DevOps</span>
+			<span class="label label-info">Pentesting</span>
+			<span class="label label-default">Perl</span>
+			<span class="label label-default">Bash</span>
+			<span class="label label-default">Flash, Actionscript, Flex</span>
+			<span class="label label-default">C++</span>
+			<span class="label label-default">Go</span>
+			<span class="label label-default">Lisp</span>
+			<span class="label label-default">Prolog</span>
+			<span class="label label-default">VBScript</span>
+			<span class="label label-default">AutoIt</span>
+			<span class="label label-default">Pascal</span>
+		</p>
 	</div>
 </div>
 
@@ -238,7 +167,9 @@ title: Home
 				Test the URL's load time.
 			</div>
 		</div>
+		<a href="https://github.com/rpfilomeno" class="btn btn-default" role="button">View All at Github</a>
 	</div>
+	
 </div>
 
 <div id="white-papers" class="panel panel-default">
@@ -307,46 +238,7 @@ title: Home
 			</div>
 			{% endfor %}
 		</div>
+		<a href="/blog" class="btn btn-default" role="button">Read Mode Blogs</a>
 	</div>
 </div>
 
-<div id="fb-root"></div>
-<script>
-	(function (d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s);
-		js.id = id;
-		js.src =
-			'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=946107866113016&autoLogAppEvents=1';
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
-</script>
-
-<div id="fb-widget" class="panel panel-default">
-	<div class="panel-heading">
-		<h3 class="panel-title">My Managed Groups</h3>
-	</div>
-	<div class="panel-body">
-		<!--Your Group Plugin for the Web code-->
-		<div class="media">
-			<div class="fb-group" data-href="https://web.facebook.com/groups/IT.Specialists" data-width="280"
-				data-show-metadata="false">
-			</div>
-		</div>
-
-
-		<div class="media">
-			<div class="fb-group" data-href="https://web.facebook.com/groups/PhilippineDigitalMarketing"
-				data-width="280" data-show-metadata="false">
-			</div>
-		</div>
-
-
-		<div class="media">
-			<div class="fb-group" data-href="https://web.facebook.com/groups/VC.StartUps" data-width="280"
-				data-show-metadata="false">
-			</div>
-		</div>
-	</div>
-</div>
