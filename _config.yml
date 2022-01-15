@@ -7,7 +7,7 @@
 
 # Site settings
 title: Gits, Gist and Musings
-email: rpfilomeno@gmail.com
+email: roger@rpfilomeno.me
 description: "Know more about Roger Filomeno. My work, my thoughts, my rants."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rpfilomeno.me" # the base hostname & protocol for your site
