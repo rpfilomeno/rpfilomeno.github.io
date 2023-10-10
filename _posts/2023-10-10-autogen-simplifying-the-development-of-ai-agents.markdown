@@ -55,6 +55,12 @@ Autogen can power a multi-agent system for online customer support. Agents can e
 Conclusion:
 The Autogen multi-agent framework simplifies the development and deployment of AI agents by providing a comprehensive set of tools and libraries. Its features, including agent abstraction, communication protocols, environment modeling, learning and adaptation, decision-making support, scalability, and integration capabilities, make it a valuable tool for various applications. Autogen enables the creation of powerful and efficient multi-agent systems for managing smart cities, optimizing supply chains, controlling autonomous systems, and enhancing customer support.
 
+Extra: here is a video example on how Autogen generated this blog post!
+<div class="video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/Bq-0ClZttc8?si=fEqrsMFTLBQRe4Pm" height="315" width="560" allowfullscreen="" frameborder="0">
+    </iframe>
+</div>
+
 Reference Links:
 1. Autogen GitHub repository: [https://github.com/autogen-ai/autogen](https://github.com/autogen-ai/autogen)
 2. Autogen Documentation: [https://autogen-ai.github.io/autogen-docs/](https://autogen-ai.github.io/autogen-docs/)
